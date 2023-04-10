@@ -1,0 +1,14 @@
+{
+  "name": "nooranah.design",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn parcel src/index.html",
+    "build": "yarn parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}

@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      marshmallow: "hsl(45, 100%, 97%)",
+      liquorice: "hsl(0, 4%, 11%)",
+      mango: "hsl(11, 43%, 50%)",
+    },
+    fontFamily: {
+      sans: ["GT Maru Trial", "sans-serif"],
+    },
   },
   plugins: [],
 };

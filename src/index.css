@@ -22,6 +22,6 @@
 
 @layer components {
   a {
-    @apply underline underline-offset-4 text-mango hover:text-liquorice focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;
+    @apply underline underline-offset-4 text-mango hover:text-marshmallow focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;
   }
 }

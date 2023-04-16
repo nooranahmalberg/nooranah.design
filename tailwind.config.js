@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       marshmallow: "hsl(45, 100%, 97%)",
       liquorice: "hsl(0, 4%, 11%)",
-      mango: "hsl(11, 43%, 50%)",
+      mango: "hsl(11, 80%, 60%)",
     },
     fontFamily: {
       sans: ["Quicksand", "sans-serif"],

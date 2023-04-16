@@ -8,7 +8,7 @@ module.exports = {
       mango: "hsl(11, 43%, 50%)",
     },
     fontFamily: {
-      sans: ["GT Maru Trial", "sans-serif"],
+      sans: ["Quicksand", "sans-serif"],
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@
 
 @font-face {
   font-family: "Quicksand";
+  font-display: swap;
   src: url("./fonts/Quicksand-Medium.woff2") format("woff2"),
     url("./fonts/Quicksand-Medium.woff") format("woff");
   font-weight: regular;
@@ -12,6 +13,7 @@
 
 @font-face {
   font-family: "Quicksand";
+  font-display: swap;
   src: url("./fonts/Quicksand-Bold.woff2") format("woff2"),
     url("./fonts/Quicksand-Bold.woff") format("woff");
   font-weight: bold;

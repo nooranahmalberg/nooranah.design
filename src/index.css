@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Medium.woff2") format("woff2"),
+    url("./fonts/Quicksand-Medium.woff") format("woff");
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("./fonts/Quicksand-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 @layer components {
   a {
     @apply underline underline-offset-4 text-mango hover:text-liquorice focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;

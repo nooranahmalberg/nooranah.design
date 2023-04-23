@@ -24,12 +24,7 @@
   a {
     @apply underline underline-offset-4 text-mango hover:text-marshmallow focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;
   }
-
-  h1 {
-    @apply text-4xl md:text-6xl font-bold;
-  }
-
-  p {
-    @apply max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+  a.button {
+    @apply flex items-center gap-1 h-14 px-4 border-2 rounded-md text-xl no-underline text-marshmallow hover:bg-mango hover:text-liquorice;
   }
 }

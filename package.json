@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn parcel src/index.html",
-    "build": "yarn parcel build src/index.html"
+    "dev": "yarn parcel src/*.html",
+    "build": "yarn parcel build src/*.html"
   },
   "devDependencies": {
     "parcel": "^2.8.3",

@@ -9,6 +9,7 @@ module.exports = {
       mango: "hsl(61, 100%, 74%)",
     },
     fontFamily: {
+      Roobert: ["Roobert TRIAL", "sans-serif"],
       sans: ["Quicksand", "sans-serif"],
     },
   },

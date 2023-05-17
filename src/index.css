@@ -37,9 +37,9 @@
     @apply text-3xl font-Roobert underline underline-offset-4 leading-normal max-w-prose lg:no-underline;
   }
   a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop;
+    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
   }
   a.link {
-    @apply text-berry underline underline-offset-4 md:no-underline md:hover:underline md:hover:underline-offset-4 focus:bg-berry focus:text-liquorice;
+    @apply font-sans underline underline-offset-4 hover:text-mango focus:bg-mango focus:text-liquorice;
   }
 }

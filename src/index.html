@@ -23,7 +23,9 @@
     />
   </head>
   <body>
-    <div class="container mx-auto px-4 pt-8 md:pt-12 space-y-8 md:space-y-44">
+    <div
+      class="container mx-auto lg:px-16 px-4 pt-8 md:pt-12 space-y-8 md:space-y-44"
+    >
       <header>
         <a href="/" class="no-underline hover:text-mango hover:fill-current">
           <div class="flex flex-row items-center gap-3">
@@ -60,21 +62,21 @@
         <br />
       </p>
       <main class="space-y-12">
-        <section class="space-y-8">
+        <section class="space-y-6 lg:space-y-8">
           <h2>Projects</h2>
-          <ul class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <ul class="grid grid-cols-1 gap-8 md:gap-12 lg:gap-16 lg:grid-cols-2">
             <li
-              class="flex flex-col gap-4 items-center lg:flex-row lg:col-span-2"
+              class="flex flex-col gap-8 items-center lg:flex-row lg:col-span-2"
             >
               <a
-                class="flex justify-center w-full bg-berry lg:hover:opacity-80"
+                class="flex justify-center w-full bg-berry rounded-xl overflow-hidden lg:hover:opacity-80"
                 href="vocal.html"
               >
                 <img src="Placeholder.png" />
               </a>
-              <a class="w-full space-y-1 lg:hover:opacity-60" href="vocal.html">
-                <span class="text-marshmallow">Hero case study</span>
-                <h3>RSL Art Union</h3>
+              <div class="flex flex-col gap-1 w-full">
+                <span class="text-marshmallow">RSL Art Union</span>
+                <h3>Hero case study</h3>
                 <p
                   class="hidden font-Roobert opacity-80 leading-relaxed text-xl md:block"
                 >
@@ -82,26 +84,12 @@
                   sit amet nunc vitae nibh finibus imperdiet. Praesent commodo
                   tortor a lectus blandit malesuada.
                 </p>
-              </a>
+                <a class="button my-5" href="vocal">Read more</a>
+              </div>
             </li>
-            <li class="flex flex-col gap-4 items-center lg:flex-row">
+            <li class="flex flex-col gap-8 items-center lg:flex-row">
               <a
-                class="flex justify-center w-full h-full bg-berry lg:hover:opacity-80"
-                href="https://www.thinkmill.com.au/work/vocal"
-              >
-                <img src="Placeholder.png" />
-              </a>
-              <a
-                class="w-full space-y-1 lg:hover:opacity-60"
-                href="https://www.thinkmill.com.au/work/vocal"
-              >
-                <span class="text-marshmallow">Vocal x Thinkmill</span>
-                <h3>Improving reading and publishing experiences</h3>
-              </a>
-            </li>
-            <li class="flex flex-col gap-4 items-center lg:flex-row">
-              <a
-                class="flex justify-center w-full h-full bg-berry lg:first-line lg:hover:opacity-80"
+                class="flex justify-center w-full h-full bg-berry rounded-xl overflow-hidden lg:hover:opacity-80"
                 href="https://www.thinkmill.com.au/work/reckon"
               >
                 <img src="Placeholder.png" />
@@ -112,6 +100,21 @@
               >
                 <span class="text-marshmallow">Reckon x Thinkmill</span>
                 <h3>Unifying accounting systems</h3>
+              </a>
+            </li>
+            <li class="flex flex-col gap-8 items-center lg:flex-row">
+              <a
+                class="flex justify-center w-full h-full bg-berry rounded-xl overflow-hidden lg:hover:opacity-80"
+                href="https://www.thinkmill.com.au/work/vocal"
+              >
+                <img src="Placeholder.png" />
+              </a>
+              <a
+                class="w-full space-y-1 lg:hover:opacity-60"
+                href="https://www.thinkmill.com.au/work/vocal"
+              >
+                <span class="text-marshmallow">Vocal x Thinkmill</span>
+                <h3>Improving reading and publishing experiences</h3>
               </a>
             </li>
           </ul>
@@ -129,16 +132,16 @@
           <div class="space-y-3 md:space-y-5">
             <h2>Let's jam</h2>
             <p
-              class="font-Roobert text-xl max-w-prose leading-loose md:text-2xl"
+              class="font-Roobert text-xl max-w-prose opacity-80 leading-relaxed"
             >
               With 5 years in tech, I've gained a breadth of experience across
               the design spectrum — research, synthesis & ideation, prototyping
               and implementation — within both agency and product teams. My
-              strengths shine most when different design focus is needed in the
-              pipeline.
+              strengths shine most when I can draw from a wide pool of interests
+              or when a focus shift is needed along the pipeline.
               <br /><br />
-              I'm open to new opportunies to work with a like-minded team and go
-              deep into a problem space. View
+              I'm currently based in Brisbane and open to new opportunies on the
+              east coast of Australia. View
               <a
                 class="link"
                 href="https://drive.google.com/file/d/1jxTzNkzPGuQXOmakPMNlttNg-cMbU0fu/view"
@@ -148,7 +151,7 @@
               >
               and feel free to say hello/ask me anything!
             </p>
-            <div class="flex flex-col gap-4 py-4 md:flex-row md:py-6">
+            <div class="flex flex-col gap-5 py-5 md:flex-row md:gap-4 md:py-4">
               <a
                 class="button"
                 href="mailto:hello@nooranah.design?subject=Hello"
@@ -158,7 +161,7 @@
                 class="button"
                 href="https://www.linkedin.com/in/ranah-malberg/"
               >
-                Message on LinkedIn
+                Message me on LinkedIn
               </a>
             </div>
           </div>

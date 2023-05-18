@@ -42,4 +42,12 @@
   a.link {
     @apply font-sans underline underline-offset-4 hover:text-mango focus:bg-mango focus:text-liquorice;
   }
+
+  h1 {
+    @apply text-4xl md:text-6xl font-bold;
+  }
+
+  p {
+    @apply max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+  }
 }

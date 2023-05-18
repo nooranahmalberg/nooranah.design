@@ -34,7 +34,7 @@
     @apply text-3xl md:text-4xl;
   }
   h3 {
-    @apply text-3xl font-Roobert underline underline-offset-4 leading-normal max-w-prose lg:no-underline;
+    @apply text-2xl font-Roobert leading-normal max-w-prose lg:text-3xl lg:no-underline;
   }
   a.button {
     @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;

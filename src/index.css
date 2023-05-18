@@ -20,9 +20,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roobert";
+  font-display: swap;
+  src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
+    url("./fonts/Roobert-Regular.woff") format("woff");
+  font-weight: regular;
+  font-style: normal;
+}
+
 @layer components {
-  a {
-    @apply underline underline-offset-4 text-mango hover:text-marshmallow focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl font-Roobert leading-normal max-w-prose lg:text-3xl lg:no-underline;
+  }
+  a.button {
+    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+  }
+  a.link {
+    @apply font-sans underline underline-offset-4 hover:text-mango focus:bg-mango focus:text-liquorice;
   }
 
   h1 {

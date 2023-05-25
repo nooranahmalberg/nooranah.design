@@ -30,28 +30,8 @@
 }
 
 @layer components {
-  h1 {
-    @apply text-4xl md:text-6xl font-bold;
-  }
-  h2 {
-    @apply font-bold text-3xl md:text-4xl;
-  }
-  h3 {
-    @apply text-2xl font-Roobert leading-normal max-w-prose  lg:leading-normal lg:text-3xl lg:no-underline;
-  }
-  p {
-    @apply max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
-  }
-  a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
-  }
-  a.link {
-    @apply underline underline-offset-4 font-Roobert font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
-  }
-<<<<<<< Updated upstream
-=======
-  a.socials {
-    @apply font-Roobert font-semibold text-berrydeep hover:underline hover:underline-offset-4;
+  a {
+    @apply underline underline-offset-4 text-mango hover:text-marshmallow focus:outline-none focus-visible:ring focus-visible:ring-mango focus-visible:ring-offset-4;
   }
 >>>>>>> Stashed changes
 }

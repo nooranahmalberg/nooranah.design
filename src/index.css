@@ -5,15 +5,6 @@
 @font-face {
   font-family: "Quicksand";
   font-display: swap;
-  src: url("./fonts/Quicksand-Medium.woff2") format("woff2"),
-    url("./fonts/Quicksand-Medium.woff") format("woff");
-  font-weight: regular;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Quicksand";
-  font-display: swap;
   src: url("./fonts/Quicksand-Bold.woff2") format("woff2"),
     url("./fonts/Quicksand-Bold.woff") format("woff");
   font-weight: bold;
@@ -30,24 +21,25 @@
 }
 
 @layer components {
-  h2 {
-    @apply text-3xl md:text-4xl;
-  }
-  h3 {
-    @apply text-2xl font-Roobert leading-normal max-w-prose lg:text-3xl lg:no-underline;
-  }
-  a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
-  }
-  a.link {
-    @apply font-sans underline underline-offset-4 hover:text-mango focus:bg-mango focus:text-liquorice;
-  }
-
   h1 {
     @apply text-4xl md:text-6xl font-bold;
   }
-
+  h2 {
+    @apply font-bold text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl font-Roobert leading-normal max-w-prose  lg:leading-normal lg:text-3xl lg:no-underline;
+  }
   p {
     @apply max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+  }
+  a.link {
+    @apply underline underline-offset-4 font-Roobert font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
+  }
+  a.socials {
+    @apply font-Roobert font-semibold text-berrydeep hover:underline hover:underline-offset-4;
+  }
+  a.button {
+    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
   }
 }

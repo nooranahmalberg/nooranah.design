@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Quicksand";
+  font-family: "CooperBT", serif;
   font-display: swap;
-  src: url("./fonts/Quicksand-Bold.woff2") format("woff2"),
-    url("./fonts/Quicksand-Bold.woff") format("woff");
+  src: url("./fonts/CooperBTBold_normal_normal.woff2") format("woff2"),
+    url("./fonts/CooperBTBold_normal_normal.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roobert";
+  font-family: "Roobert", sans-serif;
   font-display: swap;
   src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
     url("./fonts/Roobert-Regular.woff") format("woff");
@@ -22,24 +22,24 @@
 
 @layer components {
   h1 {
-    @apply text-4xl md:text-6xl font-bold;
+    @apply font-serif font-bold text-4xl md:text-6xl;
   }
   h2 {
-    @apply font-bold text-3xl md:text-4xl;
+    @apply font-serif font-bold text-3xl md:text-4xl;
   }
   h3 {
-    @apply text-2xl font-Roobert leading-normal max-w-prose  lg:leading-normal lg:text-3xl lg:no-underline;
+    @apply font-serif text-2xl leading-normal max-w-prose lg:leading-normal lg:text-3xl lg:no-underline;
   }
   p {
-    @apply max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+    @apply font-sans max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
   }
   a.link {
-    @apply underline underline-offset-4 font-Roobert font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
+    @apply font-sans underline underline-offset-4 font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
   }
   a.socials {
-    @apply font-Roobert font-semibold text-berrydeep hover:underline hover:underline-offset-4;
+    @apply font-sans font-semibold text-berrydeep hover:underline hover:underline-offset-4;
   }
   a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full font-sans text-xl font-bold no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
   }
 }

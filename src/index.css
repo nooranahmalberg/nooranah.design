@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "CooperBT", serif;
+  font-family: "CooperBT";
   font-display: swap;
   src: url("./fonts/CooperBTBold_normal_normal.woff2") format("woff2"),
     url("./fonts/CooperBTBold_normal_normal.woff") format("woff");
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: "Roobert", sans-serif;
+  font-family: "Roobert";
   font-display: swap;
   src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
     url("./fonts/Roobert-Regular.woff") format("woff");

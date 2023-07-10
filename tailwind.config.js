@@ -12,8 +12,8 @@ module.exports = {
       berrydeep: "hsl(313,70%,85%)",
     },
     fontFamily: {
-      Roobert: ["Roobert TRIAL", "sans-serif"],
-      sans: ["Quicksand", "sans-serif"],
+      sans: ["Roobert", "sans-serif"],
+      serif: ["ITC Cheltenham", "serif"],
     },
   },
   plugins: [],

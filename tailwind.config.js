@@ -13,7 +13,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],
-      serif: ["CooperBT", "serif"],
+      serif: ["ITC Cheltenham", "serif"],
     },
   },
   plugins: [],

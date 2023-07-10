@@ -5,9 +5,9 @@
 @font-face {
   font-family: "CooperBT";
   font-display: swap;
-  src: url("./fonts/CooperBTBold_normal_normal.woff2") format("woff2"),
-    url("./fonts/CooperBTBold_normal_normal.woff") format("woff");
-  font-weight: bold;
+  src: url("./fonts/CooperBTLight.woff2") format("woff2"),
+    url("./fonts/CooperBTLight.woff") format("woff");
+  font-weight: regular;
   font-style: normal;
 }
 

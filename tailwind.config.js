@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       current: "currentColor",
-      marshmallow: "hsl(45, 100%, 97%)",
+      marshmallow: "hsl(45, 76%, 95%)",
       liquorice: "hsl(0, 4%, 11%)",
       mango: "hsl(61, 100%, 74%)",
       berry: "hsl(313, 70%, 76%)",

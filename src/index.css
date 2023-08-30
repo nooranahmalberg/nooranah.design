@@ -22,10 +22,10 @@
 
 @layer components {
   h1 {
-    @apply font-serif font-bold text-4xl md:text-6xl;
+    @apply text-4xl md:text-6xl font-Roobert leading-normal;
   }
   h2 {
-    @apply font-serif font-bold text-3xl md:text-4xl;
+    @apply text-2xl md:text-4xl font-Roobert leading-normal;
   }
   h3 {
     @apply font-serif text-2xl leading-normal max-w-prose lg:leading-normal lg:text-3xl lg:no-underline;
@@ -40,6 +40,6 @@
     @apply font-sans font-semibold text-berrydeep hover:underline hover:underline-offset-4;
   }
   a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full font-sans font-bold text-xl no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+    @apply flex items-center whitespace-nowrap gap-1 h-24 px-8 py-2 rounded-full text-xl font-bold no-underline w-full text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
   }
 }

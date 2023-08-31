@@ -39,7 +39,10 @@
   a.socials {
     @apply font-sans font-semibold text-berrydeep hover:underline hover:underline-offset-4;
   }
-  a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-24 px-8 py-2 rounded-full text-xl font-bold no-underline w-full text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+  a.pributton {
+    @apply flex items-center whitespace-nowrap gap-1 h-24 px-8 py-2 rounded-full text-2xl font-bold no-underline w-full bg-liquorice text-marshmallow hover:text-liquorice hover:bg-berry focus:bg-berrypop;
+  }
+  a.secbutton {
+    @apply flex items-center whitespace-nowrap gap-1 h-24 px-8 py-2 rounded-full text-2xl font-bold no-underline w-full text-marshmallow border-2 text-liquorice hover:text-liquorice hover:bg-berry focus:bg-berrypop;
   }
 }

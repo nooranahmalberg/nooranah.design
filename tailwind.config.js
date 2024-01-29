@@ -35,7 +35,6 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],
-      serif: ["ITC Cheltenham", "serif"],
     },
   },
   plugins: [],

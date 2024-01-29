@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "ITC Cheltenham";
-  font-display: swap;
-  src: url("./fonts/ITCCheltenhamBook.woff2") format("woff2"),
-    url("./fonts/ITCCheltenhamBook.woff") format("woff");
-  font-weight: regular;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Roobert";
   font-display: swap;
   src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
@@ -32,7 +23,7 @@
 
   /* Buttons */
   a.button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-mushroom text-liquorice dark:bg-moss dark:text-marshmallow transition-all hover:bg-marshmallow;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-mushroom text-liquorice dark:bg-moss dark:text-marshmallow hover:bg-marshmallow;
  } 
 
   a:focus-visible, button:focus-visible {

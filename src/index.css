@@ -21,25 +21,44 @@
 }
 
 @layer components {
-  h1 {
-    @apply font-serif font-bold text-4xl md:text-6xl;
-  }
+  /* Typography */
   h2 {
-    @apply font-serif font-bold text-3xl md:text-4xl;
+    @apply font-bold md:text-xl leading-tight;
   }
-  h3 {
-    @apply font-serif text-2xl leading-normal max-w-prose lg:leading-normal lg:text-3xl lg:no-underline;
-  }
+
   p {
-    @apply font-sans max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+    @apply opacity-70 leading-snug;
   }
-  a.link {
-    @apply font-sans underline underline-offset-4 font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
-  }
-  a.socials {
-    @apply font-sans font-semibold text-berrydeep hover:underline hover:underline-offset-4;
-  }
+
+  /* Buttons */
   a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full font-sans font-bold text-xl no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-mushroom text-liquorice dark:bg-moss dark:text-marshmallow transition-all hover:bg-marshmallow;
+ } 
+
+  a:focus-visible, button:focus-visible {
+    @apply outline outline-2 outline-offset-4;
   }
+
+  /** Header nav **/
+  .header-nav-link {
+    @apply button;
+  }
+
+  .header-nav-link span {
+  }
+
+  /** Bento grid **/
+  .bento-card {
+    @apply p-8 rounded-2xl bg-snow text-liquorice dark:bg-ivy dark:text-marshmallow;
+  }
+
+  .bento-project {
+    @apply p-8 rounded-2xl bg-snow text-liquorice dark:bg-ivy dark:text-marshmallow;
+  }
+
+  .bento-button {
+    @apply button h-full;
+    min-height: 96px;
+  }
+  
 }

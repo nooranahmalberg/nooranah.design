@@ -24,9 +24,10 @@
   /* Buttons */
   .button {
     @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-teal100 text-deepmoss dark:bg-moss dark:text-marshmallow;
- } 
+  }
 
-  a:focus-visible, button:focus-visible {
+  a:focus-visible,
+  button:focus-visible {
     @apply outline outline-2 outline-offset-4;
   }
 
@@ -47,14 +48,13 @@
     @apply transition-opacity p-8 rounded-2xl bg-snow text-deepmoss dark:bg-ivy dark:text-marshmallow;
   }
 
-  a.bento-button {
+  .bento-button {
     @apply transition-opacity h-full bg-mushroom button rounded-xl;
     min-height: 96px;
   }
 
-  a.bento-button svg {
+  .bento-button svg {
     @apply fill-moss;
     min-height: 96px;
   }
-
 }

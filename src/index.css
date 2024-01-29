@@ -55,6 +55,5 @@
 
   .bento-button svg {
     @apply fill-moss;
-    min-height: 96px;
   }
 }

@@ -22,8 +22,8 @@
   }
 
   /* Buttons */
-  a.button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-xl bg-mushroom text-liquorice dark:bg-moss dark:text-marshmallow hover:bg-marshmallow;
+  .button {
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-teal100 text-deepmoss dark:bg-moss dark:text-marshmallow;
  } 
 
   a:focus-visible, button:focus-visible {
@@ -32,7 +32,7 @@
 
   /** Header nav **/
   .header-nav-link {
-    @apply button;
+    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-marshmallow;
   }
 
   .header-nav-link span {
@@ -40,16 +40,21 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply p-8 rounded-2xl bg-snow text-liquorice dark:bg-ivy dark:text-marshmallow;
+    @apply transition-opacity p-8 rounded-2xl bg-snow text-deepmoss dark:bg-ivy dark:text-marshmallow;
   }
 
   .bento-project {
-    @apply p-8 rounded-2xl bg-snow text-liquorice dark:bg-ivy dark:text-marshmallow;
+    @apply transition-opacity p-8 rounded-2xl bg-snow text-deepmoss dark:bg-ivy dark:text-marshmallow;
   }
 
-  .bento-button {
-    @apply button h-full;
+  a.bento-button {
+    @apply transition-opacity h-full bg-mushroom button rounded-xl;
     min-height: 96px;
   }
-  
+
+  a.bento-button svg {
+    @apply fill-moss;
+    min-height: 96px;
+  }
+
 }

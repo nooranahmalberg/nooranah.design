@@ -23,7 +23,7 @@
 
   /* Buttons */
   .button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom text-deepmoss hover:bg-ground dark:bg-moss dark:text-marshmallow;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss hover:bg-shiitake dark:bg-moss dark:text-oyster dark:hover:bg-vine;
   }
 
   a:focus-visible,
@@ -33,7 +33,7 @@
 
   /** Header nav **/
   .header-nav-link {
-    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-marshmallow;
+    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-enoki;
   }
 
   .header-nav-link span {
@@ -41,11 +41,11 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply transition-opacity p-8 rounded-2xl bg-snow text-deepmoss dark:bg-ivy dark:text-marshmallow;
+    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-enoki;
   }
 
   .bento-project {
-    @apply transition-opacity p-8 rounded-2xl bg-snow text-deepmoss dark:bg-ivy dark:text-marshmallow;
+    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-enoki;
   }
 
   .bento-button {
@@ -54,6 +54,6 @@
   }
 
   .bento-button svg {
-    @apply fill-moss dark:fill-marshmallow;
+    @apply fill-moss dark:fill-enoki;
   }
 }

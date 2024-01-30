@@ -23,7 +23,7 @@
 
   /* Buttons */
   .button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-teal100 text-deepmoss dark:bg-moss dark:text-marshmallow;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom text-deepmoss hover:bg-ground dark:bg-moss dark:text-marshmallow;
   }
 
   a:focus-visible,
@@ -49,11 +49,11 @@
   }
 
   .bento-button {
-    @apply transition-opacity h-full bg-mushroom button rounded-xl;
+    @apply button transition-opacity h-full rounded-xl;
     min-height: 96px;
   }
 
   .bento-button svg {
-    @apply fill-moss;
+    @apply fill-moss dark:fill-marshmallow;
   }
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nooranah Malberg — UX/UI designer, BCS UK</title>
+    <meta
+      name="description"
+      content="I'm a UX designer based Brisbane, Australia with 5 years experience, a passion for responsible tech and a love for research."
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+  </head>
+  <body class="bg-enoki text-deepmoss dark:bg-fern dark:text-enoki">
+    <div class="container space-y-8 py-8">
+      <header>
+        <nav>
+          <ul
+            class="flex gap-2 justify-center items-center px-2 py-2 rounded-xl"
+          >
+            <li>
+              <a href="/" class="header-nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="header-nav-link">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="./about.html" class="header-nav-link">
+                <span>About</span>
+              </a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container max-w-prose space-y-3">
+        <h1>Minimising risk to safety for veterinarians</h1>
+        <h2>Role</h2>
+        <p>
+          I joined Covetrus in 2023. My first task as a UX designer on the
+          product team was to design the second most requested feature on Pendo:
+          more obvious patient medical and behavioural alerts for veterinary
+          staff.
+        </p>
+        <h2>Problem</h2>
+        <p>
+          When I dug into this problem, I realised that veterinarians were
+          facing multiple issues because of the lack of prominence of these
+          alerts. The most significant problem was that staff were missing the
+          patient’s behavioural status on the system and getting hurt in
+          appointments. The second problem was that multiple patients with
+          behavioural issues were being booked in for a visit at the same time,
+          which could pose a risk to everyone’s safety and caused disruptions in
+          the clinic.
+        </p>
+        <h2>Method</h2>
+        <p>
+          We interviewed a total of 4 veterinary staff regarding their usage and
+          thoughts on behavioural alerts as implemented on both Ascend
+          (cloud-based) and RxWorks (server-based). 2 interviews occurred during
+          my clinic visits while the other 2 were done remotely.
+        </p>
+        <h2>Veterinarians are busy</h2>
+        <p>
+          When it comes to research, it’s typically recommended to aim for 5-6
+          participants per user group but veterinary staff are quite busy people
+          as they manage demands of a clinic. I made a Loom video to collect
+          feedback on designs or consent for an interview from 11 users who
+          voted on the Pendo request, but received no views. (If you have any
+          little tidbit on what to do instead, I’d love to know!)
+        </p>
+        <h2>Identifying key points in their workflow</h2>
+        <p>
+          Clinic visits were particularly helpful in illuminating how the
+          software was used to communicate with staff across the clinic. A
+          receptionist checking in a patient would use Ascend to send notes to a
+          veterinarian awaiting their next patient in a treatment room. On the
+          platform, I identified each area in the main workflow where the
+          patient’s behaviour status could be more obvious: Client check-in,
+          outpatients board, inpatients board and patient details page.
+        </p>
+        <h2>One customer's impact on scope</h2>
+        <p>
+          Well, that was the plan until we received an impassioned email from a
+          customer. They were one straw away from switching over to another
+          practice management system because two “aggressive” patients had
+          arrived at their clinic at the same time. This problem was echoed in
+          past interview sessions and their pain struck a chord in our hearts. I
+          expanded my scope to include the areas where receptionists would book
+          in patients: Appointments calendar and booking flow.
+        </p>
+        <h2>Tons of information at a glance</h2>
+        <p>
+          After a bit of exploration, the senior designer and I landed on an
+          idea that would deliver a ton of detail in a compact form. One key
+          insight from all interviews was that behaviour notes were crucial in
+          giving more context around a patient’s behaviour status. For example,
+          a “care required” dog may only be sensitive to other dogs and not
+          affected by people. This is why the alerts chips try to display as
+          much of that information at a glance. Since the findability of the
+          alerts and notes was low before, I brought it up to the top of the
+          page and incorporated it with the patient header component. Using
+          colour, iconography and copy to flag for the user’s attention.
+        </p>
+        <h2>Outcome</h2>
+        <p>
+          I shared designs with Covetrus team members who have veterinary
+          experience as well as customers. Overall, the final designs tested
+          favourably among them. Since my time at Covetrus was brief, I can’t
+          share any ongoing metrics on how the solution is performing. But if I
+          could, the usage of the behaviour status field would be an excellent
+          measure since a large percentage of patients are currently “not
+          assessed”. A rise in patients being labelled with a behaviour status
+          may indicate that the alerts are more prominent.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bento-button">Go1</div>
+          <div class="bento-button">Vocal</div>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Designed and built with love by Ranah with Tailwind and Vercel. Proud
+          member of the 1 megabyte club.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

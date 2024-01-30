@@ -13,6 +13,10 @@
 
 @layer components {
   /* Typography */
+  h1 {
+    @apply font-bold md:text-4xl leading-tight;
+  }
+
   h2 {
     @apply font-bold md:text-xl leading-tight;
   }
@@ -21,9 +25,13 @@
     @apply opacity-70 leading-snug;
   }
 
+  .link {
+    @apply text-antiFeather dark:text-feather underline underline-offset-4;
+  }
+
   /* Buttons */
   .button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss hover:bg-shiitake dark:bg-moss dark:text-oyster dark:hover:bg-vine;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
   }
 
   a:focus-visible,
@@ -33,7 +41,7 @@
 
   /** Header nav **/
   .header-nav-link {
-    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-enoki;
+    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-clover;
   }
 
   .header-nav-link span {
@@ -41,11 +49,11 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-enoki;
+    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
   }
 
   .bento-project {
-    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-enoki;
+    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
   }
 
   .bento-button {

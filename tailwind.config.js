@@ -31,6 +31,8 @@ module.exports = {
       feather: "hsl(161, 50%, 67%)",
 
       // dark
+      sprout: "hsl(158, 6%, 80%)",
+      clover: "hsl(158, 6%, 60%)",
       leaf: "hsl(158, 6%, 40%)",
       ivy: "hsl(158, 6%, 23%)",
       vine: "hsl(157, 6%, 37%)",

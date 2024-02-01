@@ -26,7 +26,7 @@
   }
 
   .link {
-    @apply text-antiFeather dark:text-feather underline underline-offset-4;
+    @apply underline underline-offset-4 hover:text-antiFeather hover:dark:text-feather;
   }
 
   /* Buttons */
@@ -53,7 +53,7 @@
   }
 
   .bento-project {
-    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity py-10 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout aspect-square text-center flex flex-col justify-between;
   }
 
   .bento-button {

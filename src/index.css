@@ -31,7 +31,7 @@
 
   /* Buttons */
   .button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
+    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss fill-current hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
   }
 
   a:focus-visible,

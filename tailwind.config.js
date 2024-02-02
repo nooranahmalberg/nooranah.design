@@ -40,7 +40,7 @@ module.exports = {
       antiheroYellow: "hsl(30, 55%, 59%)",
       antiheroPink: "hsl(353, 48%, 57%)",
       antiheroBlue: "hsl(194, 32%, 90%)",
-      antiFeather: "hsl(161, 50%, 50%)",
+      antiFeather: "hsl(161, 50%, 30%)",
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],

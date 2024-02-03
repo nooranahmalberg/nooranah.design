@@ -1,11 +1,5 @@
 // Bento grid
 
-const bentoProjects = document.querySelectorAll(".bento-project");
-const bentoCards = document.querySelectorAll(".bento-card");
-const bentoButtons = document.querySelectorAll(".bento-button");
-
-const opacityClass = "opacity-40";
-
 function isTouchDevice() {
   return (
     "ontouchstart" in window ||
@@ -13,6 +7,10 @@ function isTouchDevice() {
     navigator.msMaxTouchPoints > 0
   );
 }
+
+const bentoProjects = document.querySelectorAll(".bento-project");
+
+const opacityClass = "opacity-40";
 
 if (!isTouchDevice()) {
   bentoProjects.forEach((node) => {
@@ -22,16 +20,14 @@ if (!isTouchDevice()) {
       });
     });
     node.addEventListener("mouseleave", () => {
-      [...bentoProjects, ...bentoCards, ...bentoButtons].forEach((node) =>
-        node.classList.remove(opacityClass)
-      );
+      bentoProjects.forEach((node) => node.classList.remove(opacityClass));
     });
   });
 }
 
 // Theme toggle
 
-const themeToggleButton = document.querySelector("[data-theme-toggle]");
+const themeToggleButton = document.querySelector(".bento-theme-toggle");
 
 themeToggleButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -44,6 +40,7 @@ themeToggleButton.addEventListener("click", (event) => {
   }
 });
 
+// Watch for system preference changes
 window
   .matchMedia("(prefers-color-scheme: dark)")
   .addEventListener("change", (event) => {

@@ -31,7 +31,7 @@
 
   /* Buttons */
   .button {
-    @apply self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss fill-current hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
+    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss fill-current hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
   }
 
   a:focus-visible,
@@ -49,15 +49,15 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply transition-opacity p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
   }
 
   .bento-project {
-    @apply transition-opacity aspect-square justify-between text-center py-10 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity duration-200 aspect-square justify-between text-center py-10 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
   }
 
   .bento-button {
-    @apply button transition-opacity h-full rounded-xl;
+    @apply button h-full rounded-xl;
     min-height: 96px;
   }
 
@@ -66,14 +66,17 @@
   }
 
   /** Dark mode **/
+  .bento-theme-toggle {
+    @apply button h-full flex flex-col gap-2 rounded-2xl;
+  }
 
-  html:not(.dark) [data-theme-toggle] svg:last-of-type,
-  html:not(.dark) [data-theme-toggle] span:last-of-type {
+  html:not(.dark) .bento-theme-toggle svg:last-of-type,
+  html:not(.dark) .bento-theme-toggle span:last-of-type {
     display: none;
   }
 
-  html.dark [data-theme-toggle] svg:first-of-type,
-  html.dark [data-theme-toggle] span:first-of-type {
+  html.dark .bento-theme-toggle svg:first-of-type,
+  html.dark .bento-theme-toggle span:first-of-type {
     display: none;
   }
 }

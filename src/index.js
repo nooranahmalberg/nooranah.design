@@ -1,3 +1,5 @@
+// Bento grid
+
 const bentoProjects = document.querySelectorAll(".bento-project");
 const bentoCards = document.querySelectorAll(".bento-card");
 const bentoButtons = document.querySelectorAll(".bento-button");
@@ -26,3 +28,30 @@ if (!isTouchDevice()) {
     });
   });
 }
+
+// Theme toggle
+
+const themeToggleButton = document.querySelector("[data-theme-toggle]");
+
+themeToggleButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (document.documentElement.classList.contains("dark")) {
+    document.documentElement.classList.remove("dark");
+    localStorage.theme = "light";
+  } else {
+    document.documentElement.classList.add("dark");
+    localStorage.theme = "dark";
+  }
+});
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    if (event.matches) {
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "light";
+    }
+  });

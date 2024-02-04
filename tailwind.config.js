@@ -44,7 +44,7 @@ module.exports = {
       antiFeather: "hsl(161, 50%, 30%)",
     },
     fontFamily: {
-      sans: ["SF Pro Rounded", "sans-serif"],
+      sans: ["Roobert", "sans-serif"],
     },
   },
   plugins: [

@@ -27,7 +27,7 @@ if (!isTouchDevice()) {
 
 // Theme toggle
 
-const themeToggleButton = document.querySelector(".bento-theme-toggle");
+const themeToggleButton = document.querySelector(".header-theme-toggle");
 
 themeToggleButton.addEventListener("click", (event) => {
   event.preventDefault();

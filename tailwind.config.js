@@ -44,8 +44,11 @@ module.exports = {
       antiFeather: "hsl(161, 50%, 30%)",
     },
     fontFamily: {
-      sans: ["Roobert", "sans-serif"],
+      sans: ["SF Pro Rounded", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // ...
+  ],
 };

@@ -39,12 +39,25 @@
     @apply outline outline-2 outline-offset-4;
   }
 
-  /** Header nav **/
+  /** Header **/
   .header-nav-link {
-    @apply flex items-center justify-center gap-2 py-2 px-4 text-deepmoss dark:text-clover;
+    @apply flex items-center justify-center gap-2 text-deepmoss dark:text-clover;
   }
 
-  .header-nav-link span {
+  .header-theme-toggle {
+    @apply transition-colors duration-200 flex items-center gap-1 p-2 text-deepmoss dark:text-clover hover:bg-shiitake dark:hover:bg-ivy rounded-md;
+  }
+
+  .header-theme-toggle svg {
+    @apply h-8 w-8;
+  }
+
+  html:not(.dark) .header-theme-toggle svg:last-of-type {
+    display: none;
+  }
+
+  html.dark .header-theme-toggle svg:first-of-type {
+    display: none;
   }
 
   /** Bento grid **/
@@ -53,7 +66,15 @@
   }
 
   .bento-project {
-    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-10 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+  }
+
+  .bento-button-resume {
+    @apply button h-full rounded-xl;
+  }
+
+  .bento-button-resume svg {
+    @apply h-6 w-6 stroke-moss dark:stroke-enoki;
   }
 
   .bento-button {
@@ -62,21 +83,6 @@
   }
 
   .bento-button svg {
-    @apply fill-moss dark:fill-enoki;
-  }
-
-  /** Dark mode **/
-  .bento-theme-toggle {
-    @apply button h-full flex flex-col gap-2 rounded-2xl;
-  }
-
-  html:not(.dark) .bento-theme-toggle svg:last-of-type,
-  html:not(.dark) .bento-theme-toggle span:last-of-type {
-    display: none;
-  }
-
-  html.dark .bento-theme-toggle svg:first-of-type,
-  html.dark .bento-theme-toggle span:first-of-type {
-    display: none;
+    @apply w-6 h-6 fill-moss dark:fill-enoki;
   }
 }

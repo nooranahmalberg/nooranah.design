@@ -21,17 +21,6 @@
       sizes="16x16"
       href="./favicon-16x16.png"
     />
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
   </head>
   <body class="bg-mushroom200 text-moss900 dark:bg-fern dark:text-mushroom200">
     <div class="container space-y-8 py-8">
@@ -80,94 +69,25 @@
         </div>
       </header>
       <div class="container prose dark:prose-invert">
-        <h1>Minimising risk to safety for veterinary staff</h1>
+        <h1>Improving the search experience of learners</h1>
         <h2>Role</h2>
         <p>
-          I joined Covetrus in 2023 as UX designer. I was tasked with addressing
-          the second most requested feature on Pendo, which was more obvious
-          patient medical and behavioural alerts for veterinary staff. A product
-          manager and senior UX designer supported me with context and regular
-          reviews.
+          In 2018, I was a junior designer on the product team at GO1, a
+          learning management system where I helped streamline experiences
+          between a legacy system and new React-based system.
         </p>
         <h2>Problem</h2>
         <p>
-          Since the alerts were not prominent enough, veterinary staff were
-          facing issues in two main ways. The most significant problem was that
-          staff were missing the patient’s behavioural status on the system and
-          getting hurt in appointments. The second problem was that multiple
-          patients with behavioural issues were being booked in for a visit at
-          the same time, which posed a risk to everyone’s safety and caused
-          disruptions in the clinic.
-        </p>
-        <p>
-          Customers facing these problems were considering moving to other
-          practice management systems.
+          Go1 is a content aggregator for learning. Users found it overwhelming
+          to find learning because there was too much content available.
         </p>
         <h2>Method</h2>
-        <p>
-          I interviewed a total of 5 veterinary staff regarding their usage and
-          thoughts on behavioural alerts on both the cloud-based (4 users) and
-          server-based system (1 user). 2 interviews occurred in-person during
-          clinic visits while the other 3 were done remotely.
-        </p>
-        <h2>Veterinarians are busy people</h2>
-        <p>
-          When it comes to research, it’s typically recommended to aim for 5-6
-          participants per user group but veterinary staff are quite busy people
-          as they manage demands of a clinic. I made a Loom video to collect
-          feedback on designs or consent for an interview from 11 users who
-          voted on the Pendo request, but received no views. (If you have any
-          little tidbit on what to do instead, I’d love to know!)
-        </p>
-        <h2>Identifying key points in their workflow</h2>
-        <p>
-          Clinic visits were particularly helpful in illuminating how the
-          software was used to communicate with staff across the clinic. A
-          receptionist checking in a patient would use Ascend to send notes to a
-          veterinarian awaiting their next patient in a treatment room. On the
-          platform, I identified each area in the main workflow where the
-          patient’s behaviour status could be more obvious from the client
-          arriving to their final check out.
-        </p>
-        <h2>One customer's impact on scope</h2>
-        <p>
-          That was the plan until we received an email from a customer. They
-          were one straw away from switching over to another practice management
-          system because two “aggressive” patients had arrived at their clinic
-          at the same time. This problem was echoed in past interview sessions
-          and their pain struck a chord in the hearts of the product managers. I
-          expanded my scope to include the booking process.
-        </p>
-        <h2>Tons of information at a glance</h2>
-        <p>
-          After a bit of exploration, the Senior UX Designer and I landed on an
-          idea that would deliver a ton of detail in a compact form. One key
-          insight from all interviews was that behaviour notes were crucial in
-          giving more context around a patient’s behaviour status. For example,
-          a “care required” dog may only be sensitive to other dogs and not
-          affected by people. This is why the alerts chips try to display as
-          much of that information at a glance. Since the findability of the
-          alerts and notes was low, I moved it to the top of the page and
-          incorporated it in with a patient header component. Using colour,
-          iconography and copy to flag for the user’s attention.
-        </p>
+        <p>TBC</p>
         <h2>Outcome</h2>
-        <p>
-          I shared designs with Covetrus team members who have veterinary
-          experience as well as customers. Overall, the final designs tested
-          favourably among them.
-        </p>
-        <p>
-          Since my time at Covetrus was brief, I can’t share any ongoing metrics
-          on how the solution is performing. But if I could, the usage of the
-          behaviour status field would be an interesting measure to follow since
-          a large percentage of patients are currently “not assessed”. A rise in
-          patients being labelled with a behaviour status may indicate that the
-          alerts are more prominent.
-        </p>
+        <p>TBC</p>
         <div class="grid grid-cols-2 gap-4">
-          <a href="go1.html" class="bento-button">Go1</a>
           <a href="vocal.html" class="bento-button">Vocal</a>
+          <a href="covetrus.html" class="bento-button">Covetrus</a>
         </div>
       </div>
       <footer>
@@ -177,6 +97,5 @@
         </p>
       </footer>
     </div>
-    <script src="./index.js"></script>
   </body>
 </html>

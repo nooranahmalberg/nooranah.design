@@ -14,11 +14,11 @@
 @layer components {
   /* Typography */
   h1 {
-    @apply font-bold md:text-4xl leading-tight;
+    @apply font-bold text-2xl md:text-4xl leading-tight;
   }
 
   h2 {
-    @apply font-bold md:text-xl leading-loose;
+    @apply font-bold text-lg md:text-xl leading-loose;
   }
 
   p {
@@ -31,7 +31,7 @@
 
   /* Buttons */
   .button {
-    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-portabella text-deepmoss fill-current hover:bg-shiitake dark:bg-moss dark:text-sprout dark:hover:bg-vine;
+    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom300 text-moss900 fill-current hover:bg-mushroom400 dark:bg-moss800 dark:text-sprout dark:hover:bg-vine;
   }
 
   a:focus-visible,
@@ -41,11 +41,11 @@
 
   /** Header **/
   .header-nav-link {
-    @apply flex items-center justify-center gap-2 text-deepmoss dark:text-clover;
+    @apply flex gap-2 items-center justify-center text-moss900 dark:text-sprout hover:text-moss700;
   }
 
   .header-theme-toggle {
-    @apply transition-colors duration-200 flex items-center gap-1 p-2 text-deepmoss dark:text-clover hover:bg-shiitake dark:hover:bg-ivy rounded-md;
+    @apply transition-colors duration-200 flex items-center gap-1 p-1 text-moss900 dark:text-clover hover:bg-mushroom300 dark:hover:bg-ivy rounded-md;
   }
 
   .header-theme-toggle svg {
@@ -62,19 +62,19 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply p-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply p-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
   }
 
   .bento-project {
-    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-oyster text-deepmoss dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
   }
 
   .bento-button-resume {
-    @apply button h-full rounded-xl;
+    @apply button h-full rounded-xl flex;
   }
 
   .bento-button-resume svg {
-    @apply h-6 w-6 stroke-moss dark:stroke-enoki;
+    @apply h-6 w-6 stroke-moss800 dark:stroke-mushroom200;
   }
 
   .bento-button {
@@ -83,6 +83,6 @@
   }
 
   .bento-button svg {
-    @apply w-6 h-6 fill-moss dark:fill-enoki;
+    @apply w-6 h-6 fill-moss800 dark:fill-mushroom200;
   }
 }

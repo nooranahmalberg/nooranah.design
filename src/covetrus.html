@@ -83,25 +83,25 @@
         <h1>Minimising risk to safety for veterinary staff</h1>
         <h2>Role</h2>
         <p>
-          I joined Covetrus in 2023 as UX designer. I was tasked with addressing
-          the second most requested feature on Pendo, which was more obvious
-          patient medical and behavioural alerts for veterinary staff. A product
-          manager and senior UX designer supported me with context and regular
-          reviews.
+          I joined Covetrus in 2023 as UX designer. My first task was to address
+          user's second most requested feature on Pendo, which related to
+          patient medical and behavioural alerts on Ascend (the cloud-based
+          practice management system). I worked with a product manager, senior
+          UX designer and front-end engineers throughout discovery and delivery.
         </p>
         <h2>Problem</h2>
         <p>
-          Since the alerts were not prominent enough, veterinary staff were
-          facing issues in two main ways. The most significant problem was that
-          staff were missing the patient’s behavioural status on the system and
-          getting hurt in appointments. The second problem was that multiple
+          In the clinic, veterinary staff were facing issues with the alerts in
+          two main ways. The most significant problem was that staff were
+          missing the patient’s behavioural status on the system and getting
+          physically hurt in appointments. The second problem was that multiple
           patients with behavioural issues were being booked in for a visit at
           the same time, which posed a risk to everyone’s safety and caused
-          disruptions in the clinic.
+          disruptions in clinics.
         </p>
         <p>
-          Customers facing these problems were considering moving to other
-          practice management systems.
+          Users who got hurt were considering moving to other practice
+          management systems.
         </p>
         <h2>Method</h2>
         <p>
@@ -133,29 +133,36 @@
         <p>
           That was the plan until we received an email from a customer. They
           were one straw away from switching over to another practice management
-          system because two “aggressive” patients had arrived at their clinic
-          at the same time. This problem was echoed in past interview sessions
-          and their pain struck a chord in the hearts of the product managers. I
-          expanded my scope to include the booking process.
+          system because two patients labelled as "aggressive" arrived at their
+          clinic at the same time, which placed patients, staff and customers at
+          risk. Based on frustrations clearly expressed by the user, I expanded
+          my scope to include the booking process.
         </p>
         <h2>Tons of information at a glance</h2>
         <p>
-          After a bit of exploration, the Senior UX Designer and I landed on an
-          idea that would deliver a ton of detail in a compact form. One key
-          insight from all interviews was that behaviour notes were crucial in
-          giving more context around a patient’s behaviour status. For example,
-          a “care required” dog may only be sensitive to other dogs and not
-          affected by people. This is why the alerts chips try to display as
-          much of that information at a glance. Since the findability of the
-          alerts and notes was low, I moved it to the top of the page and
-          incorporated it in with a patient header component. Using colour,
-          iconography and copy to flag for the user’s attention.
+          After some jamming and review sessions, the Senior UX Designer and I
+          landed on an idea that delivered a ton of detail in a compact form.
+        </p>
+        <p>
+          One key insight from user interviews was that the notes attached to
+          the patient's behaviour status were crucial in providing more context.
+          For example, a “care required” dog may only be sensitive to other dogs
+          and not affected by humans. This is why the final design aims to
+          display as much of that information at a glance. Since the findability
+          of the alerts and notes was low, the alerts were moved to the top of
+          the page and incorporated within a re-used patient header component.
+        </p>
+        <p>
+          To ensure we maintain the product's principle for accessiblity, a
+          combination of colour, iconography and copy is used to grab the user’s
+          attention. When colour or icons alone are used to communicate
+          information, visually-impaired users miss out.
         </p>
         <h2>Outcome</h2>
         <p>
           I shared designs with Covetrus team members who have veterinary
-          experience as well as customers. Overall, the final designs tested
-          favourably among them.
+          experience as well as Ascend customers. Overall, the final designs
+          tested favourably among them.
         </p>
         <p>
           Since my time at Covetrus was brief, I can’t share any ongoing metrics
@@ -165,10 +172,24 @@
           patients being labelled with a behaviour status may indicate that the
           alerts are more prominent.
         </p>
-        <div class="grid grid-cols-2 gap-4">
-          <a href="go1.html" class="bento-button">Go1</a>
-          <a href="vocal.html" class="bento-button">Vocal</a>
-        </div>
+      </div>
+      <div class="flex flex-col gap-4 md:flex-row justify-center pt-24 pb-8">
+        <a href="./vocal.html" class="md:ml-96 read-next">
+          <div class="flex flex-col gap-1">
+            <span class="opacity-80 text-base">Vocal</span>Connecting writers
+            with their readers
+          </div>
+          <svg
+            class="w-5 h-5 opacity-60"
+            viewBox="0 0 8 16"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.92 5.62C11.8724 5.49725 11.801 5.3851 11.71 5.29L6.71 0.289999C6.61676 0.19676 6.50607 0.122799 6.38425 0.0723391C6.26243 0.0218787 6.13186 -0.00409317 6 -0.00409317C5.7337 -0.00409317 5.4783 0.101695 5.29 0.289999C5.19676 0.383237 5.1228 0.493927 5.07234 0.615749C5.02188 0.737571 4.99591 0.868139 4.99591 0.999999C4.99591 1.2663 5.1017 1.52169 5.29 1.71L8.59 5H1C0.734784 5 0.48043 5.10536 0.292893 5.29289C0.105357 5.48043 0 5.73478 0 6C0 6.26521 0.105357 6.51957 0.292893 6.70711C0.48043 6.89464 0.734784 7 1 7H8.59L5.29 10.29C5.19627 10.383 5.12188 10.4936 5.07111 10.6154C5.02034 10.7373 4.9942 10.868 4.9942 11C4.9942 11.132 5.02034 11.2627 5.07111 11.3846C5.12188 11.5064 5.19627 11.617 5.29 11.71C5.38296 11.8037 5.49356 11.8781 5.61542 11.9289C5.73728 11.9797 5.86799 12.0058 6 12.0058C6.13201 12.0058 6.26272 11.9797 6.38458 11.9289C6.50644 11.8781 6.61704 11.8037 6.71 11.71L11.71 6.71C11.801 6.61489 11.8724 6.50275 11.92 6.38C12.02 6.13654 12.02 5.86346 11.92 5.62Z"
+            />
+          </svg>
+        </a>
       </div>
       <footer>
         <p>

@@ -83,86 +83,110 @@
         <h1>Minimising risk to safety for veterinary staff</h1>
         <h2>Role</h2>
         <p>
-          I joined Covetrus in 2023 as UX designer. My first task was to address
-          user's second most requested feature on Pendo, which related to
-          patient medical and behavioural alerts on Ascend (the cloud-based
-          practice management system). I worked with a product manager, senior
-          UX designer and front-end engineers throughout discovery and delivery.
+          In 2023, I was a UX designer at Covetrus. I helped improve the user
+          experience of Ascend, their cloud-based veterinarian practice
+          management system, based on customer feedback. I worked with a product
+          manager, a senior UX designer and front-end engineers to meet the
+          needs of veterinary staff surrounding patient alerts.
         </p>
         <h2>Problem</h2>
+        <img src="./images/Covetrus-Pendo.png" />
         <p>
-          In the clinic, veterinary staff were facing issues with the alerts in
-          two main ways. The most significant problem was that staff were
-          missing the patient’s behavioural status on the system and getting
-          physically hurt in appointments. The second problem was that multiple
-          patients with behavioural issues were being booked in for a visit at
-          the same time, which posed a risk to everyone’s safety and caused
-          disruptions in clinics.
-        </p>
-        <p>
-          Users who got hurt were considering moving to other practice
-          management systems.
+          Medical and behavioral alerts on the practice management system were
+          not obvious enough and veterinary staff were unfortunately getting
+          hurt by patients. Understandably so, this was the second most
+          requested feature on Pendo. This feature was the second most voted
+          request on Pendo, understandably so.
         </p>
         <h2>Method</h2>
         <p>
-          I interviewed a total of 5 veterinary staff regarding their usage and
-          thoughts on behavioural alerts on both the cloud-based (4 users) and
-          server-based system (1 user). 2 interviews occurred in-person during
-          clinic visits while the other 3 were done remotely.
+          This feature started with the users proposed solution to their
+          problem. They suggested having pop-ups appear on the platform so that
+          they do not miss a patient alert again. I think this was a popular
+          suggestion because patient pop-ups were found on RxWorks, an early
+          predecessor to Ascend. So they were likely to be familiar with that
+          pattern.
+        </p>
+        <p>
+          Starting with a solution was unusual for me, but it was a good start
+          as any to begin with understanding the problem. I visited two clinics
+          to observe the users at their jobs and interacting with the software.
+          One clinic was using Ascend and another was on RxWorks.
         </p>
         <h2>Veterinarians are busy people</h2>
         <p>
           When it comes to research, it’s typically recommended to aim for 5-6
-          participants per user group but veterinary staff are quite busy people
-          as they manage demands of a clinic. I made a Loom video to collect
-          feedback on designs or consent for an interview from 11 users who
-          voted on the Pendo request, but received no views. (If you have any
-          little tidbit on what to do instead, I’d love to know!)
+          participants per user group but veterinary staff are busy people with
+          demands of a clinic to manage. 11 users voted for pop-ups on Pendo so
+          I made a Loom video to share some ideas and ask for an interview. No
+          one viewed my video unfortunately so this tactic didn't quite work. If
+          you have any little tidbit on what to do instead, I’d love to know!
         </p>
-        <h2>Identifying key points in their workflow</h2>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0">
+          <iframe
+            src="https://www.loom.com/embed/4cec9d809daa46bc845a1164aa367502?sid=6f72acc6-b093-47ff-9a1e-8fc3ab92dada"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          ></iframe>
+        </div>
+        <h2>Pop-ups were desired but ineffective</h2>
         <p>
-          Clinic visits were particularly helpful in illuminating how the
-          software was used to communicate with staff across the clinic. A
-          receptionist checking in a patient would use Ascend to send notes to a
-          veterinarian awaiting their next patient in a treatment room. On the
-          platform, I identified each area in the main workflow where the
-          patient’s behaviour status could be more obvious from the client
-          arriving to their final check out.
+          While I got no views on my Loom video, the clinic visits were
+          incredibly illuminating. I learnt that the patient pop-ups on RxWorks
+          were often hastily dismissed when a vet was focused on capturing notes
+          during a consultation. It was clear that pop-ups alone would not solve
+          for the lack of prominence of medical and behavioural alerts.
+          https://www.nngroup.com/articles/popups/
         </p>
-        <h2>One customer's impact on scope</h2>
         <p>
-          That was the plan until we received an email from a customer. They
-          were one straw away from switching over to another practice management
-          system because two patients labelled as "aggressive" arrived at their
-          clinic at the same time, which placed patients, staff and customers at
-          risk. Based on frustrations clearly expressed by the user, I expanded
-          my scope to include the booking process.
+          Since the alerts were important information and highly requested, they
+          stayed in the final delivery as one of a few alert updates to Ascend.
         </p>
         <h2>Tons of information at a glance</h2>
         <p>
-          After some jamming and review sessions, the Senior UX Designer and I
+          Through jamming and design critiques, the Senior UX Designer and I
           landed on an idea that delivered a ton of detail in a compact form.
         </p>
         <p>
           One key insight from user interviews was that the notes attached to
           the patient's behaviour status were crucial in providing more context.
           For example, a “care required” dog may only be sensitive to other dogs
-          and not affected by humans. This is why the final design aims to
-          display as much of that information at a glance. Since the findability
-          of the alerts and notes was low, the alerts were moved to the top of
-          the page and incorporated within a re-used patient header component.
+          and not affected by humans. This is why the I tried to pack in as much
+          of that information at a glance. Since the findability of the alerts
+          and notes was low, alerts were moved to the top of the page with the
+          patient's details.
         </p>
         <p>
-          To ensure we maintain the product's principle for accessiblity, a
-          combination of colour, iconography and copy is used to grab the user’s
-          attention. When colour or icons alone are used to communicate
-          information, visually-impaired users miss out.
+          On Ascend, I identified each area in the main workflow where the
+          patient’s behaviour status could be more obvious from the client
+          arriving to their final check out. A receptionist checking in a
+          patient would use Ascend to send notes to a veterinarian awaiting
+          their next patient in a treatment room.
+        </p>
+        <h2>One customer's impact on scope</h2>
+        <p>
+          In the middle of shipping these UX improvements, we received an email
+          from a customer who was one straw away from switching to another
+          service. They had recently booked two patients with behavioural issues
+          to arrive at the same time, causing a lot of disruptions to their day.
+          A-ha, calendar bookings. This was overlooked so far but thankfully,
+          this email came at the right time. Using existing components, I was
+          able to mock up this idea and test it with the customer within a week.
         </p>
         <h2>Outcome</h2>
         <p>
-          I shared designs with Covetrus team members who have veterinary
-          experience as well as Ascend customers. Overall, the final designs
-          tested favourably among them.
+          The final designs were made with great collaboration with customers
+          and they tested well internally, especially among Covetrus team
+          members with veterinary experience.
         </p>
         <p>
           Since my time at Covetrus was brief, I can’t share any ongoing metrics
@@ -172,9 +196,14 @@
           patients being labelled with a behaviour status may indicate that the
           alerts are more prominent.
         </p>
+        <p>
+          Ultimately, awareness of a patient’s behaviour status at any given
+          time throughout the main workflow and booking process would be the
+          most indicative of success.
+        </p>
       </div>
-      <div class="flex flex-col gap-4 md:flex-row justify-center pt-24 pb-8">
-        <a href="./vocal.html" class="md:ml-96 read-next">
+      <div class="flex flex-col gap-4 md:flex-row justify-end pt-24 pb-8">
+        <a href="./vocal.html" class="read-next">
           <div class="flex flex-col gap-1">
             <span class="opacity-80 text-base">Vocal</span>Connecting writers
             with their readers

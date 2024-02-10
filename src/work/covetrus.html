@@ -80,7 +80,7 @@
         </div>
       </header>
       <main>
-        <div class="container prose dark:prose-invert">
+        <div class="prose dark:prose-invert mx-auto">
           <h1>Minimising risk to safety for veterinary staff</h1>
           <h2>Role</h2>
           <p>
@@ -111,13 +111,23 @@
             frustrations and needs around patient alerts.
           </p>
         </div>
-        <figure class="mx-20 my-8">
-          <img
-            alt="Three compelling quotes from user research"
-            src="../images/Covetrus-UserResearch.png"
-          />
-        </figure>
-        <div class="container prose dark:prose-invert">
+        <div class="my-8 max-w-6xl mx-auto">
+          <picture>
+            <source
+              media="(max-width: 799px)"
+              srcset="../images/Covetrus-UserResearch-Mobile.png"
+            />
+            <source
+              media="(min-width: 800px)"
+              srcset="../images/Covetrus-UserResearch.png"
+            />
+            <img
+              src="../images/Covetrus-UserResearch.png"
+              alt="Three compelling quotes from user research"
+            />
+          </picture>
+        </div>
+        <div class="prose dark:prose-invert mx-auto">
           <h2>The workflow</h2>
           <p>
             From the clinic visits, I determined the points in a typical client

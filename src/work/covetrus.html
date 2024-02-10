@@ -80,6 +80,11 @@
         </div>
       </header>
       <div class="container prose dark:prose-invert">
+        <span
+          class="block p-4 bg-mango text-moss900 mb-4 rounded-sm border-l-4 border-antiMango"
+          >Working with the garage door open of sorts. This write-up is still in
+          progress.</span
+        >
         <h1>Minimising risk to safety for veterinary staff</h1>
         <h2>Role</h2>
         <p>
@@ -90,32 +95,48 @@
           needs of veterinary staff surrounding patient alerts.
         </p>
         <h2>Problem</h2>
-        <img src="./../images/Covetrus-Pendo.png" />
+        <img src="../images/Covetrus-Pendo.png" />
         <p>
-          Medical and behavioral alerts on the practice management system were
-          not obvious enough and veterinary staff were unfortunately getting
-          hurt by patients. Understandably so, this was the second most
-          requested feature on Pendo. This feature was the second most voted
-          request on Pendo, understandably so.
+          Multiple users expressed that medical and behavioral alerts on the
+          practice management system were not obvious enough and their staff
+          were unfortunately getting hurt in the process. Understandably so,
+          these requests received the second most amount of votes on Pendo by
+          other users.
         </p>
-        <h2>Method</h2>
+        <h2>Research</h2>
         <p>
-          This feature started with the users proposed solution to their
-          problem. They suggested having pop-ups appear on the platform so that
-          they do not miss a patient alert again. I think this was a popular
-          suggestion because patient pop-ups were found on RxWorks, an early
-          predecessor to Ascend. So they were likely to be familiar with that
-          pattern.
+          The Pendo feedback from customers gave us a possible solution but did
+          not provide much details into what's going on. To dig deeper into why
+          and how these alerts were being missed, I visited 2 clinics and
+          interviewed 2 other vet nurses remotely to understand their
+          frustrations and needs around patient alerts.
+        </p>
+      </div>
+      <figure class="mx-20">
+        <img src="../images/Covetrus-UserResearch.png" />
+      </figure>
+      <div class="container prose dark:prose-invert">
+        <h2>The workflow</h2>
+        <p>
+          From the clinic visits, I determined the points in a typical client
+          visit where patient information needed to be more salient.
+        </p>
+        <h2>Pop-ups were desired but ineffective</h2>
+        <p>
+          While I got no views on my Loom video, the clinic visits were
+          incredibly illuminating. I learnt that the patient pop-ups on RxWorks
+          were often hastily dismissed when a vet was focused on capturing notes
+          during a consultation. It was clear that pop-ups alone would not solve
+          for the lack of prominence of medical and behavioural alerts.
+          https://www.nngroup.com/articles/popups/
         </p>
         <p>
-          Starting with a solution was unusual for me, but it was a good start
-          as any to begin with understanding the problem. I visited two clinics
-          to observe the users at their jobs and interacting with the software.
-          One clinic was using Ascend and another was on RxWorks.
+          Since the alerts were important information and highly requested, they
+          stayed in the final delivery as one of a few alert updates to Ascend.
         </p>
         <h2>Veterinarians are busy people</h2>
         <p>
-          When it comes to research, it’s typically recommended to aim for 5-6
+          When it comes to testing, it’s typically recommended to aim for 5-6
           participants per user group but veterinary staff are busy people with
           demands of a clinic to manage. 11 users voted for pop-ups on Pendo so
           I made a Loom video to share some ideas and ask for an interview. No
@@ -138,19 +159,6 @@
             "
           ></iframe>
         </div>
-        <h2>Pop-ups were desired but ineffective</h2>
-        <p>
-          While I got no views on my Loom video, the clinic visits were
-          incredibly illuminating. I learnt that the patient pop-ups on RxWorks
-          were often hastily dismissed when a vet was focused on capturing notes
-          during a consultation. It was clear that pop-ups alone would not solve
-          for the lack of prominence of medical and behavioural alerts.
-          https://www.nngroup.com/articles/popups/
-        </p>
-        <p>
-          Since the alerts were important information and highly requested, they
-          stayed in the final delivery as one of a few alert updates to Ascend.
-        </p>
         <h2>Tons of information at a glance</h2>
         <p>
           Through jamming and design critiques, the Senior UX Designer and I
@@ -227,6 +235,6 @@
         </p>
       </footer>
     </div>
-    <script src="./../index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

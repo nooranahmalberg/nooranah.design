@@ -22,7 +22,7 @@
   }
 
   p {
-    @apply opacity-70 leading-snug;
+    @apply opacity-80 leading-snug;
   }
 
   .link {

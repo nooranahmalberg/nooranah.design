@@ -1,20 +1,54 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        DEFAULT: "1400px",
+        // sm: '640px',
+        // md: '768px',
+        // lg: '1024px',
+        // xl: '1400px',
+        //  ['2xl']: '1536px',
+      },
+      padding: {
+        DEFAULT: "16px",
+        md: "64px",
+      },
+    },
     colors: {
       current: "currentColor",
-      marshmallow: "hsl(45, 100%, 97%)",
-      liquorice: "hsl(0, 4%, 11%)",
-      mango: "hsl(61, 100%, 74%)",
-      berry: "hsl(313, 70%, 76%)",
-      berrypop: "hsl(313, 70%, 91%)",
-      berrydeep: "hsl(313,70%,85%)",
+      mushroom100: "hsl(45, 21%, 100%)",
+      mushroom200: "hsl(45, 21%, 96%)",
+      mushroom300: "hsl(45, 21%, 85%)",
+      mushroom400: "hsl(45, 21%, 75%)",
+      blue700: "hsl(220, 30%, 40%)",
+      moss700: "hsl(157, 6%, 40%)",
+      moss800: "hsl(157, 6%, 33%)",
+      moss900: "hsl(156, 10%, 25%)",
+      feather: "hsl(161, 50%, 67%)",
+      mango: "hsl(42, 89%, 84%)",
+
+      // dark
+      sprout: "hsl(158, 6%, 80%)",
+      clover: "hsl(158, 6%, 60%)",
+      leaf: "hsl(158, 6%, 40%)",
+      ivy: "hsl(158, 6%, 23%)",
+      vine: "hsl(157, 6%, 37%)",
+      fern: "hsl(156, 5%, 18%)",
+      antiblue700: "hsl(353, 48%, 57%)",
+      antiheroBlue: "hsl(194, 32%, 90%)",
+      antiFeather: "hsl(161, 50%, 30%)",
+      antiMango: "hsl(42, 89%, 40%)",
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],
-      serif: ["ITC Cheltenham", "serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // ...
+  ],
 };

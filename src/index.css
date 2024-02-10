@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "ITC Cheltenham";
-  font-display: swap;
-  src: url("./fonts/ITCCheltenhamBook.woff2") format("woff2"),
-    url("./fonts/ITCCheltenhamBook.woff") format("woff");
-  font-weight: regular;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Roobert";
   font-display: swap;
   src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
@@ -21,25 +12,81 @@
 }
 
 @layer components {
+  /* Typography */
   h1 {
-    @apply font-serif font-bold text-4xl md:text-6xl;
+    @apply text-2xl md:text-4xl leading-tight;
   }
+
   h2 {
-    @apply font-serif font-bold text-3xl md:text-4xl;
+    @apply text-lg md:text-xl leading-loose;
   }
-  h3 {
-    @apply font-serif text-2xl leading-normal max-w-prose lg:leading-normal lg:text-3xl lg:no-underline;
-  }
+
   p {
-    @apply font-sans max-w-prose mb-3 text-xl leading-relaxed md:text-2xl md:leading-relaxed;
+    @apply opacity-80 leading-snug;
   }
-  a.link {
-    @apply font-sans underline underline-offset-4 font-medium hover:text-mango focus:bg-mango focus:text-liquorice;
+
+  .link {
+    @apply underline underline-offset-4 hover:text-antiFeather hover:dark:text-feather;
   }
-  a.socials {
-    @apply font-sans font-semibold text-berrydeep hover:underline hover:underline-offset-4;
+
+  /* Buttons */
+  .button {
+    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom300 text-moss900 fill-current hover:bg-mushroom400 dark:bg-moss800 dark:text-sprout dark:hover:bg-vine;
   }
-  a.button {
-    @apply flex items-center whitespace-nowrap gap-1 h-14 px-6 py-2 rounded-full font-sans font-bold text-xl no-underline w-fit text-marshmallow bg-berry text-liquorice hover:bg-berrypop focus:bg-berrydeep;
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline outline-2 outline-offset-4;
+  }
+
+  .read-next {
+    @apply p-6 rounded-lg bg-mushroom300 w-fit flex flex-row gap-5 items-center no-underline text-xl hover:bg-mushroom400 dark:bg-moss800 hover:dark:bg-moss700;
+  }
+
+  /** Header **/
+  .header-nav-link {
+    @apply flex gap-2 items-center justify-center text-moss900 dark:text-sprout hover:text-moss700;
+  }
+
+  .header-theme-toggle {
+    @apply transition-colors duration-200 flex items-center gap-1 p-1 text-moss900 dark:text-clover hover:bg-mushroom300 dark:hover:bg-ivy rounded-md;
+  }
+
+  .header-theme-toggle svg {
+    @apply h-8 w-8;
+  }
+
+  html:not(.dark) .header-theme-toggle svg:last-of-type {
+    display: none;
+  }
+
+  html.dark .header-theme-toggle svg:first-of-type {
+    display: none;
+  }
+
+  /** Bento grid **/
+  .bento-card {
+    @apply p-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
+  }
+
+  .bento-project {
+    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
+  }
+
+  .bento-button-resume {
+    @apply button h-full rounded-xl flex;
+  }
+
+  .bento-button-resume svg {
+    @apply h-6 w-6 stroke-moss800 dark:stroke-mushroom200;
+  }
+
+  .bento-button {
+    @apply button h-full rounded-xl no-underline;
+    min-height: 96px;
+  }
+
+  .bento-button svg {
+    @apply w-6 h-6 fill-moss800 dark:fill-mushroom200;
   }
 }

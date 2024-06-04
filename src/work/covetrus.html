@@ -103,13 +103,6 @@
             other users.
           </p>
           <h2>Research</h2>
-          <p>
-            The Pendo feedback from customers gave us a possible solution but
-            did not provide much details into what's going on. To dig deeper
-            into why and how these alerts were being missed, I visited 2 clinics
-            and interviewed 2 other vet nurses remotely to understand their
-            frustrations and needs around patient alerts.
-          </p>
         </div>
         <div class="my-8 max-w-6xl mx-auto">
           <picture>
@@ -128,24 +121,23 @@
           </picture>
         </div>
         <div class="prose dark:prose-invert mx-auto">
+          <p>
+            The Pendo feedback from customers gave us a possible solution but
+            did not provide much details into what's going on. To dig deeper
+            into why and how these alerts were being missed, I visited 2 clinics
+            and interviewed 2 other vet nurses remotely to understand their
+            frustrations and needs around patient alerts.
+          </p>
           <h2>The workflow</h2>
+        </div>
+        <img class="my-16 object-fill" src="../images/Covetrus-Workflow.png" />
+        <div class="prose dark:prose-invert mx-auto">
           <p>
             From the clinic visits, I determined the points in a typical client
-            visit where patient information needed to be more salient.
-          </p>
-          <h2>Pop-ups were desired but ineffective</h2>
-          <p>
-            While I got no views on my Loom video, the clinic visits were
-            incredibly illuminating. I learnt that the patient pop-ups on
-            RxWorks were often hastily dismissed when a vet was focused on
-            capturing notes during a consultation. It was clear that pop-ups
-            alone would not solve for the lack of prominence of medical and
-            behavioural alerts. https://www.nngroup.com/articles/popups/
-          </p>
-          <p>
-            Since the alerts were important information and highly requested,
-            they stayed in the final delivery as one of a few alert updates to
-            Ascend.
+            visit where patient information needed to be salient. Initially, I
+            focused on the appointments only (yellow dots). Later, we expanded
+            the scope when a customer accidentally booked two patients with
+            behavioural issues in to arrive at the same time.
           </p>
           <h2>Veterinarians are busy people</h2>
           <p>
@@ -174,6 +166,7 @@
             ></iframe>
           </div>
           <h2>Tons of information at a glance</h2>
+          <img src="../images/Covetrus-MockUp.png" />
           <p>
             Through jamming and design critiques, the Senior UX Designer and I
             landed on an idea that delivered a ton of detail in a compact form.
@@ -186,24 +179,6 @@
             pack in as much of that information at a glance. Since the
             findability of the alerts and notes was low, alerts were moved to
             the top of the page with the patient's details.
-          </p>
-          <p>
-            On Ascend, I identified each area in the main workflow where the
-            patient’s behaviour status could be more obvious from the client
-            arriving to their final check out. A receptionist checking in a
-            patient would use Ascend to send notes to a veterinarian awaiting
-            their next patient in a treatment room.
-          </p>
-          <h2>One customer's impact on scope</h2>
-          <p>
-            In the middle of shipping these UX improvements, we received an
-            email from a customer who was one straw away from switching to
-            another service. They had recently booked two patients with
-            behavioural issues to arrive at the same time, causing a lot of
-            disruptions to their day. A-ha, calendar bookings. This was
-            overlooked so far but thankfully, this email came at the right time.
-            Using existing components, I was able to mock up this idea and test
-            it with the customer within a week.
           </p>
           <h2>Outcome</h2>
           <p>
@@ -247,13 +222,8 @@
       <footer>
         <p>
           Designed and built with love by Ranah using
-          <a href="https://tailwindcss.com" class="link">Tailwind</a>,
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            class="link"
-            >Javascript</a
-          >
-          and <a href="https://vercel.com" class="link">Vercel</a>.
+          <a class="link" href="https://tailwindcss.com">Tailwind</a> and hosted
+          on <a class="link" href="https://vercel.com">Vercel</a>.
         </p>
       </footer>
     </div>

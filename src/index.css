@@ -49,7 +49,7 @@
   }
 
   .header-theme-toggle {
-    @apply transition-colors duration-200 flex items-center gap-1 p-1 text-moss900 dark:text-clover hover:bg-mushroom300 dark:hover:bg-ivy rounded-md;
+    @apply rounded-full transition-colors duration-200 flex items-center gap-1 p-1 text-moss900 dark:text-clover hover:bg-mushroom300 dark:hover:bg-ivy;
   }
 
   .header-theme-toggle svg {

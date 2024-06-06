@@ -81,123 +81,89 @@
       </header>
       <main>
         <div class="prose dark:prose-invert mx-auto">
-          <h1>Minimising risk to safety for veterinary staff</h1>
-          <h2>Role</h2>
+          <h2>Understanding and defining the problem</h2>
           <p>
-            In 2023, I was a UX designer at Covetrus. I helped improve the user
-            experience of Ascend, their cloud-based veterinarian practice
-            management system, based on customer feedback. I worked with a
-            product manager, a senior UX designer and front-end engineers to
-            meet the needs of veterinary staff surrounding patient alerts.
-          </p>
-          <h2>Problem</h2>
-          <img
-            alt="Collection of Pendo customer feedback about Behavioural and Medical Alerts"
-            src="../images/Covetrus-Pendo.png"
-          />
-          <p>
-            Multiple users expressed that medical and behavioral alerts on the
-            practice management system were not obvious enough and their staff
-            were unfortunately getting hurt in the process. Understandably so,
-            these requests received the second most amount of votes on Pendo by
-            other users.
-          </p>
-          <h2>Research</h2>
-        </div>
-        <div class="my-8 max-w-6xl mx-auto">
-          <picture>
-            <source
-              media="(max-width: 799px)"
-              srcset="../images/Covetrus-UserResearch-Mobile.png"
-            />
-            <source
-              media="(min-width: 800px)"
-              srcset="../images/Covetrus-UserResearch.png"
-            />
-            <img
-              src="../images/Covetrus-UserResearch.png"
-              alt="Three compelling quotes from user research"
-            />
-          </picture>
-        </div>
-        <div class="prose dark:prose-invert mx-auto">
-          <p>
-            The Pendo feedback from customers gave us a possible solution but
-            did not provide much details into what's going on. To dig deeper
-            into why and how these alerts were being missed, I visited 2 clinics
-            and interviewed 2 other vet nurses remotely to understand their
-            frustrations and needs around patient alerts.
-          </p>
-          <h2>The workflow</h2>
-        </div>
-        <img class="my-16 object-fill" src="../images/Covetrus-Workflow.png" />
-        <div class="prose dark:prose-invert mx-auto">
-          <p>
-            From the clinic visits, I determined the points in a typical client
-            visit where patient information needed to be salient. Initially, I
-            focused on the appointments only (yellow dots). Later, we expanded
-            the scope when a customer accidentally booked two patients with
-            behavioural issues in to arrive at the same time.
-          </p>
-          <h2>Veterinarians are busy people</h2>
-          <p>
-            When it comes to testing, it’s typically recommended to aim for 5-6
-            participants per user group but veterinary staff are busy people
-            with demands of a clinic to manage. 11 users voted for pop-ups on
-            Pendo so I made a Loom video to share some ideas and ask for an
-            interview. No one viewed my video unfortunately so this tactic
-            didn't quite work. If you have any little tidbit on what to do
-            instead, I’d love to know!
-          </p>
-          <div style="position: relative; padding-bottom: 56.25%; height: 0">
-            <iframe
-              src="https://www.loom.com/embed/4cec9d809daa46bc845a1164aa367502?sid=6f72acc6-b093-47ff-9a1e-8fc3ab92dada"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              "
-            ></iframe>
-          </div>
-          <h2>Tons of information at a glance</h2>
-          <img src="../images/Covetrus-MockUp.png" />
-          <p>
-            Through jamming and design critiques, the Senior UX Designer and I
-            landed on an idea that delivered a ton of detail in a compact form.
+            Veterinarians using Ascend submitted reports that patient behaviour
+            alerts were not prominent enough, becoming the second most requested
+            UX improvement at the time. I investigated this issue by
+            interviewing different roles in a veterinary clinic from clinic
+            owners to receptionists, and observing how they used Ascend when a
+            patient visited their clinic.
           </p>
           <p>
-            One key insight from user interviews was that the notes attached to
-            the patient's behaviour status were crucial in providing more
-            context. For example, a “care required” dog may only be sensitive to
-            other dogs and not affected by humans. This is why the I tried to
-            pack in as much of that information at a glance. Since the
-            findability of the alerts and notes was low, alerts were moved to
-            the top of the page with the patient's details.
-          </p>
-          <h2>Outcome</h2>
-          <p>
-            The final designs were made with great collaboration with customers
-            and they tested well internally, especially among Covetrus team
-            members with veterinary experience.
+            From observation, I learnt that the diagnosis room where vets were
+            physically handling pets in the room, the patient alert was easy to
+            ignore due to banner blindness.
           </p>
           <p>
-            Since my time at Covetrus was brief, I can’t share any ongoing
-            metrics on how the solution is performing. But if I could, the usage
-            of the behaviour status field would be an interesting measure to
-            follow since a large percentage of patients are currently “not
-            assessed”. A rise in patients being labelled with a behaviour status
-            may indicate that the alerts are more prominent.
+            I also discovered that reception was also critical to focus on
+            because incoming patients with risky behaviours could cause a scene
+            and potentially harm other pets or people, especially if there were
+            multiple risky behaviours present.
           </p>
           <p>
-            Ultimately, awareness of a patient’s behaviour status at any given
-            time throughout the main workflow and booking process would be the
-            most indicative of success.
+            From the initial research, these were the problems we were trying to
+            solve:
+            <li>
+              <ul>
+                Problem 1
+              </ul>
+              <ul>
+                Problem 2
+              </ul>
+              <ul>
+                Problem 3
+              </ul>
+            </li>
+          </p>
+          <h2>Ideating and Prototyping</h2>
+          <p>
+            I first started on some ideas with the page of bookings called "My
+            Day" where receptionists kept track of all ongoing patient visits.
+            Since I was determined to make it really obvious, my initial
+            inspiration were amber alerts and medical sirens to draw the user's
+            attention.
+          </p>
+          <p>
+            (Include gif) Obviously, this was far too distracting to be useful
+            for receptionists... So I toned it back with borders around the
+            patient picture. It drew enough attention to the area and was
+            discreet enough to explain away to pet parents.
+          </p>
+          <p>
+            (Include kanban board) Yes, another user need was to avoid any
+            unnecessary offense to patient guardians who may glance at the
+            screen by chance. This meant no overt "DANGER" labels around pet
+            pictures. I learnt this from feedback by ex-colleagues with
+            veterinary experience. They were really helpful since it can be
+            difficult to get a hold of veterinary staff.
+          </p>
+          <p>
+            With the patient information display, there was already a warning
+            banner that appeared above the consultation view. In my concepts, I
+            included that same banner across the platform to reuse an existing
+            design pattern. As I was sharing these designs, we realised that we
+            wanted to take the opportunity to improve the warning banner and
+            bring in greater consistency with how patient information is
+            displayed. So I collaborated with other designers to create a global
+            patient info component with a minimise/expand interaction.
+          </p>
+          <h2>Tests</h2>
+          <p>I would have done these tests...</p>
+          <h2>Lessons learnt</h2>
+          <p>
+            The process behind this feature improvement was like a tumbleweed.
+            New problems emerged along the way and solutions often changed with
+            each new round of feedback, which is part of what being an agile
+            product team is about. But what started as a Pendo request felt like
+            a mega-feature that addressed every problem imaginable relating to
+            patient alerts. We even managed to include improvements to the
+            calendar app in the feature release when an email towards the time
+            of feature release about patient behaviours in calendar view.
+          </p>
+          <p>
+            I could have worked more closely with product managers and engineers
+            on how to stagger the problems and prioritise work for release.
           </p>
         </div>
         <div class="flex flex-col gap-4 md:flex-row justify-end pt-24 pb-8">

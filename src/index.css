@@ -30,6 +30,10 @@
   }
 
   /* Buttons */
+  .cta-button {
+    @apply button bg-moss900 text-mushroom200;
+  }
+
   .button {
     @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom300 text-moss900 fill-current hover:bg-mushroom400 dark:bg-moss800 dark:text-sprout dark:hover:bg-vine;
   }
@@ -70,7 +74,7 @@
   }
 
   .bento-project {
-    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
   }
 
   .bento-button-resume {
@@ -84,6 +88,10 @@
   .bento-button {
     @apply button h-full rounded-xl no-underline;
     min-height: 96px;
+  }
+
+  .bento-action {
+    @apply underline text-lg underline-offset-4;
   }
 
   .bento-button svg {

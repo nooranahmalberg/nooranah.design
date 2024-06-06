@@ -42,6 +42,7 @@ module.exports = {
       antiheroBlue: "hsl(194, 32%, 90%)",
       antiFeather: "hsl(161, 50%, 30%)",
       antiMango: "hsl(42, 89%, 40%)",
+      clay: "#A34D56",
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],

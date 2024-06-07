@@ -70,11 +70,15 @@
 
   /** Bento grid **/
   .bento-card {
-    @apply p-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
+    @apply p-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout  border-mushroom250 border-2;
   }
 
   .bento-project {
-    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
+    @apply transition-opacity duration-200 flex flex-col justify-between py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout border-mushroom250 border-2;
+  }
+
+  .hero-project {
+    @apply transition-opacity duration-200 bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout border-mushroom250 border-2;
   }
 
   .bento-button-resume {

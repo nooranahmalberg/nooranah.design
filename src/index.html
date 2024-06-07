@@ -37,7 +37,7 @@
   <div class="container space-y-8 py-8">
     <header class="flex justify-between items-center">
       <nav>
-        <ul class="flex gap-4">
+        <ul class="flex gap-6">
           <li>
             <a href="/" class="header-nav-link">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
@@ -50,7 +50,7 @@
           <li>About</li>
         </ul>
       </nav>
-      <div class="flex gap-5">
+      <div>
         <button class="header-theme-toggle" aria-label="Toggle dark mode">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -63,54 +63,42 @@
               fill="currentColor" />
           </svg>
         </button>
-        <a class="cta-button" href="mailto:ranah.malberg@gmail.com">Contact</a>
       </div>
     </header>
     <main>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="flex flex-col gap-4 md:flex-row md:gap-6 bento-card md:col-span-2">
-          <img class="h-32 w-32 object-cover rounded-full flex-shrink-0" src="./images/RanahMalberg Profile Pic.png"
-            alt="Headshot of Nooranah Malberg" />
-          <div class="flex flex-col md:gap-1 justify-center">
-            <h2>Hi! I'm Ranah</h2>
-            <p>
-              A product designer with a love for UX research and knack for story-telling.
-            </p>
-            <div
-              class="mt-4 md:mt-2 border border-mushroom300 dark:border-leaf px-3 py-1 rounded-lg self-start flex gap-2 items-center">
-              <div class="h-2 w-2 bg-feather dark:bg-feather rounded-full"></div>
-              <p class="text-sm">Open to work</p>
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-4 md:flex-row md:gap-6 bento-card h-full">
+            <img class="h-32 w-32 object-cover rounded-full flex-shrink-0" src="./images/RanahMalberg Profile Pic.png"
+              alt="Headshot of Nooranah Malberg" />
+            <div class="flex flex-col md:gap-1 justify-center">
+              <h2>Hi! I'm Ranah</h2>
+              <p>
+                A product designer with a love for UX research and knack for story-telling.
+              </p>
+              <div
+                class="mt-4 md:mt-2 border border-mushroom300 dark:border-leaf px-3 py-1 rounded-lg self-start flex gap-2 items-center">
+                <div class="h-2 w-2 bg-feather dark:bg-feather rounded-full"></div>
+                <p class="text-sm">Open to work</p>
+              </div>
             </div>
           </div>
+          <div class="bento-card flex flex-col md:gap-1 h-full">
+            <h2>Experience</h2>
+            <p>4+ years in product/UX design with an early background in humanities and communications.</p>
+            <a href="https://drive.google.com/file/d/1jxTzNkzPGuQXOmakPMNlttNg-cMbU0fu/view" class="mt-4 md:mt-auto flex flex-row gap-2 w-fit text-moss700 dark:text-clover hover:underline hover:underline-offset-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            Download my resume
+          </a>
         </div>
-        <div class="bento-card flex flex-col md:gap-1 h-full">
-          <h2>Experience</h2>
-          <p>4+ years in product/UX design with an early background in humanities and communications.</p>
-          <a href="https://drive.google.com/file/d/1jxTzNkzPGuQXOmakPMNlttNg-cMbU0fu/view" class="mt-4 md:mt-auto flex flex-row gap-2 w-fit text-moss700 dark:text-clover hover:underline hover:underline-offset-4"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-          </svg>
-          Download my resume
-        </a></div>
-        <a href="./portfolio/covetrus.html" class="bento-project">
-          <img src="images/Covetrus-Thumbnail.png" alt="Thumbnail of Covetrus project" />
-          <div class="flex flex-col gap-1">
+      </div>
+        <a href="./portfolio/covetrus.html" class="hero-project col-span-2 flex flex-row gap-4 h-fit rounded-2xl md:col-span-2">
+          <div class="flex flex-col gap-1 my-auto px-8">
             <h2>Minimising risk to safety for veterinary staff at Covetrus</h2>
             <p class="bento-action">Read more</p>
           </div>
-        </a>
-        <a href="./portfolio/vocal.html" class="bento-project">
-          <img src="images/Vocal-Thumbnail.png" alt="Thumbnail of Vocal project" />
-          <div class="flex flex-col gap-1">
-            <h2>Connecting Vocal writers with their readers</h2>
-            <p class="bento-action">Read more</p>
-          </div>
-        </a>
-        <a href="./portfolio/go1.html" class="bento-project">
-          <img src="images/go1-Thumbnail.png" alt="Thumbnail of Go1 project"/>
-          <div class="flex flex-col gap-2">
-            <h2>Insights on learning trends for employers at Go1</h2>
-            <p class="bento-action">Read more</p>
-          </div>
+          <img src="images/Covetrus-Thumbnail.png" alt="Thumbnail of Covetrus project" class="w-2/3 p-8" />
         </a>
         <div class="grid md:grid-cols-2 gap-4">
           <a href="https://www.behance.net/nooranahmalberg" class="bento-button">
@@ -135,19 +123,32 @@
                 d="M12.0083 2.16663C6.47396 2.16663 2 6.67357 2 12.2493C2 16.7062 4.86662 20.4789 8.84338 21.8142C9.34058 21.9146 9.5227 21.5973 9.5227 21.3303C9.5227 21.0966 9.50631 20.2954 9.50631 19.4606C6.72225 20.0616 6.14249 18.2587 6.14249 18.2587C5.69508 17.0901 5.03215 16.7898 5.03215 16.7898C4.12092 16.1722 5.09852 16.1722 5.09852 16.1722C6.1093 16.2389 6.63969 17.2071 6.63969 17.2071C7.53432 18.7427 8.97592 18.3089 9.55588 18.0417C9.63865 17.3907 9.90394 16.94 10.1856 16.6896C7.96514 16.4559 5.62891 15.5879 5.62891 11.715C5.62891 10.6133 6.02634 9.71187 6.65608 9.01083C6.55672 8.76049 6.20866 7.72533 6.75564 6.33985C6.75564 6.33985 7.60069 6.07272 9.5061 7.37481C10.3219 7.15411 11.1632 7.04183 12.0083 7.04089C12.8533 7.04089 13.7148 7.15786 14.5102 7.37481C16.4159 6.07272 17.2609 6.33985 17.2609 6.33985C17.8079 7.72533 17.4596 8.76049 17.3603 9.01083C18.0066 9.71187 18.3876 10.6133 18.3876 11.715C18.3876 15.5879 16.0514 16.4391 13.8143 16.6896C14.179 17.0068 14.4936 17.6076 14.4936 18.5592C14.4936 19.9113 14.4773 20.9964 14.4773 21.3301C14.4773 21.5973 14.6596 21.9146 15.1566 21.8144C19.1333 20.4787 22 16.7062 22 12.2493C22.0163 6.67357 17.526 2.16663 12.0083 2.16663Z" />
             </svg>
             Github</a>
+            <div class="bento-card flex flex-col md:gap-1 md:col-span-2">
+              <h2>Get in touch</h2>
+              <p class="max-w-prose">
+                Need help with achieving your mission? Or got any feedback on my work?
+                Let me know and I'll get back to you soon as I can.
+              </p>
+              <a href="mailto:ranah.malberg@gmail.com" class="button mt-4 md:mt-auto"><svg width="20" height="20">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63225 2.5H14.3678C15.0386 2.49999 15.5922 2.49998 16.0432 2.53683C16.5116 2.5751 16.9422 2.65724 17.3466 2.86331C17.9738 3.18289 18.4838 3.69283 18.8034 4.32003C19.0022 4.71032 19.0857 5.12495 19.1257 5.57442C19.1702 5.71059 19.178 5.85421 19.1516 5.99133C19.1667 6.36643 19.1667 6.80029 19.1667 7.2989V12.7011C19.1667 13.3719 19.1667 13.9255 19.1298 14.3765C19.0916 14.8449 19.0094 15.2755 18.8034 15.68C18.4838 16.3072 17.9738 16.8171 17.3466 17.1367C16.9422 17.3428 16.5116 17.4249 16.0432 17.4632C15.5922 17.5 15.0386 17.5 14.3678 17.5H5.63223C4.96143 17.5 4.4078 17.5 3.95681 17.4632C3.4884 17.4249 3.05781 17.3428 2.65337 17.1367C2.02616 16.8171 1.51622 16.3072 1.19665 15.68C0.990571 15.2755 0.908434 14.8449 0.870163 14.3765C0.833315 13.9255 0.833324 13.3719 0.833335 12.7011V7.29892C0.833327 6.80031 0.83332 6.36643 0.848449 5.99133C0.821985 5.85421 0.829796 5.71058 0.874348 5.57441C0.914338 5.12494 0.997787 4.71032 1.19665 4.32003C1.51622 3.69283 2.02616 3.18289 2.65337 2.86331C3.05781 2.65724 3.4884 2.5751 3.95681 2.53683C4.40781 2.49998 4.96144 2.49999 5.63225 2.5ZM2.5 7.43388V12.6667C2.5 13.3805 2.50065 13.8657 2.53129 14.2408C2.56114 14.6061 2.61525 14.793 2.68166 14.9233C2.84145 15.2369 3.09641 15.4919 3.41002 15.6517C3.54035 15.7181 3.72719 15.7722 4.09253 15.802C4.46761 15.8327 4.95285 15.8333 5.66667 15.8333H14.3333C15.0472 15.8333 15.5324 15.8327 15.9075 15.802C16.2728 15.7722 16.4597 15.7181 16.59 15.6517C16.9036 15.4919 17.1586 15.2369 17.3183 14.9233C17.3848 14.793 17.4389 14.6061 17.4687 14.2408C17.4994 13.8657 17.5 13.3805 17.5 12.6667V7.43388L12.0071 11.2789C11.9748 11.3015 11.9428 11.324 11.911 11.3463C11.4571 11.665 11.0586 11.9449 10.6047 12.058C10.2076 12.157 9.79237 12.157 9.39533 12.058C8.94142 11.9449 8.54288 11.665 8.089 11.3463C8.05725 11.324 8.02522 11.3015 7.99288 11.2789L2.5 7.43388ZM17.431 5.44774L11.0513 9.91351C10.4439 10.3387 10.3152 10.4125 10.2016 10.4408C10.0692 10.4738 9.93079 10.4738 9.79845 10.4408C9.6848 10.4125 9.5561 10.3387 8.94865 9.91351L2.56898 5.44774C2.59875 5.2751 2.63748 5.16339 2.68166 5.07668C2.84145 4.76308 3.09641 4.50811 3.41002 4.34832C3.54035 4.28192 3.72719 4.22781 4.09253 4.19796C4.46761 4.16732 4.95285 4.16667 5.66667 4.16667H14.3333C15.0472 4.16667 15.5324 4.16732 15.9075 4.19796C16.2728 4.22781 16.4597 4.28192 16.59 4.34832C16.9036 4.50811 17.1586 4.76308 17.3183 5.07668C17.3625 5.16339 17.4013 5.2751 17.431 5.44774Z" />
+                </svg>
+                Drop me a message
+              </a>
+            </div>
         </div>
-        <div class="bento-card flex flex-col md:gap-1 md:col-span-2">
-          <h2>Get in touch</h2>
-          <p class="max-w-prose">
-            Need help with achieving your mission? Or got any feedback on my work?
-            Let me know and I'll get back to you soon as I can.
-          </p>
-          <a href="mailto:ranah.malberg@gmail.com" class="button mt-4 md:mt-auto"><svg width="20" height="20">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63225 2.5H14.3678C15.0386 2.49999 15.5922 2.49998 16.0432 2.53683C16.5116 2.5751 16.9422 2.65724 17.3466 2.86331C17.9738 3.18289 18.4838 3.69283 18.8034 4.32003C19.0022 4.71032 19.0857 5.12495 19.1257 5.57442C19.1702 5.71059 19.178 5.85421 19.1516 5.99133C19.1667 6.36643 19.1667 6.80029 19.1667 7.2989V12.7011C19.1667 13.3719 19.1667 13.9255 19.1298 14.3765C19.0916 14.8449 19.0094 15.2755 18.8034 15.68C18.4838 16.3072 17.9738 16.8171 17.3466 17.1367C16.9422 17.3428 16.5116 17.4249 16.0432 17.4632C15.5922 17.5 15.0386 17.5 14.3678 17.5H5.63223C4.96143 17.5 4.4078 17.5 3.95681 17.4632C3.4884 17.4249 3.05781 17.3428 2.65337 17.1367C2.02616 16.8171 1.51622 16.3072 1.19665 15.68C0.990571 15.2755 0.908434 14.8449 0.870163 14.3765C0.833315 13.9255 0.833324 13.3719 0.833335 12.7011V7.29892C0.833327 6.80031 0.83332 6.36643 0.848449 5.99133C0.821985 5.85421 0.829796 5.71058 0.874348 5.57441C0.914338 5.12494 0.997787 4.71032 1.19665 4.32003C1.51622 3.69283 2.02616 3.18289 2.65337 2.86331C3.05781 2.65724 3.4884 2.5751 3.95681 2.53683C4.40781 2.49998 4.96144 2.49999 5.63225 2.5ZM2.5 7.43388V12.6667C2.5 13.3805 2.50065 13.8657 2.53129 14.2408C2.56114 14.6061 2.61525 14.793 2.68166 14.9233C2.84145 15.2369 3.09641 15.4919 3.41002 15.6517C3.54035 15.7181 3.72719 15.7722 4.09253 15.802C4.46761 15.8327 4.95285 15.8333 5.66667 15.8333H14.3333C15.0472 15.8333 15.5324 15.8327 15.9075 15.802C16.2728 15.7722 16.4597 15.7181 16.59 15.6517C16.9036 15.4919 17.1586 15.2369 17.3183 14.9233C17.3848 14.793 17.4389 14.6061 17.4687 14.2408C17.4994 13.8657 17.5 13.3805 17.5 12.6667V7.43388L12.0071 11.2789C11.9748 11.3015 11.9428 11.324 11.911 11.3463C11.4571 11.665 11.0586 11.9449 10.6047 12.058C10.2076 12.157 9.79237 12.157 9.39533 12.058C8.94142 11.9449 8.54288 11.665 8.089 11.3463C8.05725 11.324 8.02522 11.3015 7.99288 11.2789L2.5 7.43388ZM17.431 5.44774L11.0513 9.91351C10.4439 10.3387 10.3152 10.4125 10.2016 10.4408C10.0692 10.4738 9.93079 10.4738 9.79845 10.4408C9.6848 10.4125 9.5561 10.3387 8.94865 9.91351L2.56898 5.44774C2.59875 5.2751 2.63748 5.16339 2.68166 5.07668C2.84145 4.76308 3.09641 4.50811 3.41002 4.34832C3.54035 4.28192 3.72719 4.22781 4.09253 4.19796C4.46761 4.16732 4.95285 4.16667 5.66667 4.16667H14.3333C15.0472 4.16667 15.5324 4.16732 15.9075 4.19796C16.2728 4.22781 16.4597 4.28192 16.59 4.34832C16.9036 4.50811 17.1586 4.76308 17.3183 5.07668C17.3625 5.16339 17.4013 5.2751 17.431 5.44774Z" />
-            </svg>
-            Drop me a message
-          </a>
-        </div>
+        <a href="./portfolio/vocal.html" class="bento-project">
+          <div class="flex flex-col gap-1">
+            <h2>Connecting Vocal writers with their readers</h2>
+            <p class="bento-action">Read more</p>
+          </div>
+        </a>
+        <a href="./portfolio/go1.html" class="bento-project">
+          <img src="images/go1-Thumbnail.png" alt="Thumbnail of Go1 project"/>
+          <div class="flex flex-col gap-2">
+            <h2>Insights on learning trends for employers at Go1</h2>
+            <p class="bento-action">Read more</p>
+          </div>
+        </a>
     </main>
     <footer>
       <p>

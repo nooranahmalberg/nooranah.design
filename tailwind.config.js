@@ -22,6 +22,7 @@ module.exports = {
       current: "currentColor",
       mushroom100: "hsl(45, 21%, 100%)",
       mushroom200: "hsl(45, 21%, 96%)",
+      mushroom250: "hsl(45, 21%, 90%)",
       mushroom300: "hsl(45, 21%, 85%)",
       mushroom400: "hsl(45, 21%, 75%)",
       blue700: "hsl(220, 30%, 40%)",

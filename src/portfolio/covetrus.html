@@ -33,7 +33,7 @@
       }
     </script>
   </head>
-  <body class="bg-mushroom200 text-moss900 dark:bg-fern dark:text-mushroom200">
+  <body class="bg-mushroom100 text-moss900 dark:bg-fern dark:text-mushroom200">
     <div class="container space-y-8 py-8">
       <header class="flex justify-between items-center">
         <nav>
@@ -80,38 +80,91 @@
         </div>
       </header>
       <main>
-        <img
-          src="../images/Covetrus-Thumbnail.png"
-          class="mx-auto w-3/4 pb-8"
-        />
+        <div class="mx-auto my-10 p-10 bg-antiFeather">
+          <img src="../images/Covetrus-Thumbnail.png" class="mx-auto w-3/4" />
+        </div>
         <div class="prose dark:prose-invert mx-auto">
-          <h2>Understanding the problem</h2>
+          <h1>Minimising risk to safety for veterinary staff</h1>
+          <p>10 min read • Last updated on 19 June 2024</p>
+          <h2>Summary</h2>
           <p>
-            On
+            Users were submitting reports about missing patient behaviour alerts
+            on
             <a
               href="https://software.covetrus.com/apac/veterinary-solutions/ascend-cloud-veterinary-software/"
               >Ascend</a
-            >, there were numerous user-submitted Pendo reports about patient
-            behaviour alerts and their lack of prominence. It became the second
-            most requested UX improvement at the time. As a UX designer, I
-            investigated these requests by interviewing different roles in a
+            >, a cloud-based practice management system for veterinary clinics.
+            Since this was potentially dangerous for everyone including pets,
+            this was one of Ascend's most requested improvements in 2023.
+          </p>
+          <div class="flex flex-row gap-2">
+            <span class="w-1/2"
+              ><h3>My role</h3>
+              <p>Research • UI Design</p></span
+            >
+            <span class="w-1/2"
+              ><h3>Time period</h3>
+              <p>November 2023 - January 2024</p></span
+            >
+          </div>
+          <h2>Understanding the problem</h2>
+          <p>
+            I investigated these reports by interviewing different roles in a
             veterinary clinic from clinic owners to receptionists, and observing
             how they used Ascend when a patient visited their clinic.
           </p>
+          <figure>
+            <img
+              alt="Image of veterinarian working at a desk"
+              src="https://images.unsplash.com/photo-1605725961202-18c2678ea41e"
+            />
+            <figcaption>
+              Photo by
+              <a
+                href="https://unsplash.com/@jakaylatoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Jakayla Toney</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/woman-in-green-robe-sitting-on-chair-nwRoHW4j3gg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
+              of a veterinarian at work
+            </figcaption>
+          </figure>
           <p>
             During the clinic visit, I observed that vets relied on the software
-            to share information with one another, rather than a verbal
-            exchange. The UI was quite dense in information so it was easy to
-            miss a small badge that signalled patient behaviour. Not realising
-            that a patient was prone to aggression led to accidents and stress
-            in the clinic.
+            to share information with one another, rather than through a verbal
+            exchange. Receptionists would store new information based on a phone
+            call or patient arrival on the system and veterinarians reviewed
+            this information from their consultation rooms.
           </p>
+          <table class="table-auto">
+            <thead>
+              <tr>
+                <td class="col-span-4">Behaviour labels on Ascend</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-bold">Indicative of risk</td>
+                <td>Aggressive</td>
+                <td>Nervous</td>
+                <td>Not assessed</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Absence of risk</td>
+                <td>Friendly</td>
+                <td>None</td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             I learnt that aggression was not the only type of behaviour vets
             were concerned about. The interaction between behaviours (e.g. a
             nervous pet and a pet prone to barking in the same room) and the
-            detail about the pet (e.g. Only nervous around women) were just as
-            important as the behaviour label themselves.
+            detail about their behaviour (e.g. Only nervous around women) were
+            just as important as the behaviour label themselves.
           </p>
           <p>
             From the initial research, these were the two problems we were
@@ -123,8 +176,8 @@
               for appointments at the same time
             </li>
             <li>
-              The veterinarian in the consult room are missing critical updates
-              to a patient's behaviour and notes
+              Veterinarians in the consult room are missing critical updates to
+              a patient's behaviour and notes
             </li>
           </ul>
           <h2>Ideating and Prototyping</h2>
@@ -167,12 +220,12 @@
           <p>
             The work behind this feature improvement was highly iterative. New
             problems emerged along the way and solutions often changed with each
-            new round of feedback, which is what being in an agile team is all
-            about.
+            new round of feedback, which isn't unusual in an agile work
+            environment.
           </p>
           <p>
-            But what started as a Pendo request felt like a mega-feature that
-            addressed every problem imaginable relating to patient alerts. We
+            But what started as a small UX fix felt like a mega-feature that
+            solved for every problem imaginable relating to patient alerts. We
             even managed to include improvements to the calendar app in the
             feature release to address a well-timed customer complaint.
           </p>

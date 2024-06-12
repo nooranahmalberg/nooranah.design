@@ -88,14 +88,14 @@
           <p>10 min read • Last updated on 19 June 2024</p>
           <h2>Summary</h2>
           <p>
-            Users were submitting reports about missing patient behaviour alerts
-            on
+            Multiple users submitted reports about missing patient behaviour
+            alerts on
             <a
               href="https://software.covetrus.com/apac/veterinary-solutions/ascend-cloud-veterinary-software/"
               >Ascend</a
             >, a cloud-based practice management system for veterinary clinics.
-            Since this was potentially dangerous for everyone including pets,
-            this was one of Ascend's most requested improvements in 2023.
+            Since this issue posed a risk to both people and pets, it was one of
+            Ascend's most requested improvements in 2023.
           </p>
           <div class="flex flex-row gap-2">
             <span class="w-1/2"
@@ -110,8 +110,8 @@
           <h2>Understanding the problem</h2>
           <p>
             I investigated these reports by interviewing different roles in a
-            veterinary clinic from clinic owners to receptionists, and observing
-            how they used Ascend when a patient visited their clinic.
+            veterinary clinic, and observing how they used Ascend when a patient
+            visited their clinic.
           </p>
           <figure>
             <img
@@ -133,11 +133,11 @@
             </figcaption>
           </figure>
           <p>
-            During the clinic visit, I observed that vets relied on the software
-            to share information with one another, rather than through a verbal
-            exchange. Receptionists would store new information based on a phone
-            call or patient arrival on the system and veterinarians reviewed
-            this information from their consultation rooms.
+            During the clinic visit, I observed how vets used the software
+            exclusively to share information with one another without any verbal
+            exchange. Receptionists added information based on a phone call or
+            patient arrival on the system and veterinarians reviewed this
+            information from their consultation rooms.
           </p>
           <table class="table-auto">
             <thead>
@@ -176,34 +176,38 @@
               for appointments at the same time
             </li>
             <li>
-              Veterinarians in the consult room are missing critical updates to
-              a patient's behaviour and notes
+              Veterinarians are missing critical updates to a patient's
+              behaviour and notes when starting a consultation
             </li>
           </ul>
           <h2>Ideating and Prototyping</h2>
+          <p>
+            I tackled the problems receptionists were facing first. How can I
+            make it really obvious that the clinic was about to expect a patient
+            with a history of aggression?
+          </p>
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBrxieYwei-QL4-oKb1_Se5_ghDd8LL13rzA&s"
+            class="mx-auto border-2 border-moss700 rounded-md"
+            src="../images/patientwarning.gif"
           />
           <p>
-            I first started on some ideas for My Day. Since I was determined to
-            make it really obvious, my initial inspiration were amber alerts and
-            medical sirens to draw the user's attention.
+            I was learning how to animate objects in Figma and prototyped a
+            patient booking card with flashing circles. Sharing the prototype
+            internally helped set the mark on how obvious these alert should be;
+            make them prominent... but not distracting. These flashing circles
+            were quickly stripped back.
           </p>
+          <img src="../images/Covetrus-Thumbnail.png" />
           <p>
-            (Include gif) Obviously, this was far too distracting to be useful
-            for receptionists... So I toned it back with borders around the
-            patient picture. It drew attention to the area and was discreet
-            enough to explain away to pet parents.
+            Colleagues with veterinary experience shared with me that it was
+            important for some vets to avoid unnecessary offense. A bright red
+            "DANGER" label next to the patient's picture or flashing circles
+            would jeopardise their customer relationships if their customers
+            were to notice it. So more sensitive information was hidden in an
+            overlay that users had to click to access, and we retained "CARE" as
+            the warning label on first glance.
           </p>
-          <p>
-            (Include kanban board) Yes, one user need I later discovered was to
-            avoid any unnecessary offense to patient guardians who may glance at
-            the screen by chance. This meant no overt "DANGER" labels around pet
-            pictures. I thankfully learnt this from feedback by my colleagues
-            with experience in the field. They were really helpful during this
-            project since it can be difficult to get a hold of veterinary staff
-            who are usually very busy.
-          </p>
+          <p>END OF DRAFT / The original request was pop-ups...</p>
           <p>
             With the patient information display, there was already a warning
             banner that appeared above the consultation view. In my concepts, I

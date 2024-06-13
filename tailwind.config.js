@@ -22,6 +22,7 @@ module.exports = {
       current: "currentColor",
       mushroom100: "hsl(45, 21%, 100%)",
       mushroom200: "hsl(45, 21%, 96%)",
+      mushroom250: "hsl(45, 21%, 90%)",
       mushroom300: "hsl(45, 21%, 85%)",
       mushroom400: "hsl(45, 21%, 75%)",
       blue700: "hsl(220, 30%, 40%)",
@@ -42,6 +43,8 @@ module.exports = {
       antiheroBlue: "hsl(194, 32%, 90%)",
       antiFeather: "hsl(161, 50%, 30%)",
       antiMango: "hsl(42, 89%, 40%)",
+      clay: "#A34D56",
+      white: "#FFFFFF",
     },
     fontFamily: {
       sans: ["Roobert", "sans-serif"],

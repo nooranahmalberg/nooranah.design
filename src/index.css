@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,82 +13,26 @@
   font-style: normal;
 }
 
-@layer components {
-  /* Typography */
-  h1 {
-    @apply text-2xl md:text-4xl leading-tight;
-  }
+body {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
 
-  h2 {
-    @apply text-lg md:text-xl leading-loose;
-  }
+.transition-bg {
+  transition: background-color 0.5s ease-in-out;
+}
 
-  p {
-    @apply opacity-80 leading-snug;
-  }
+a {
+  text-decoration: none;
+  color: #be185d; /* pink-700 */
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  padding: 0.25rem;
+}
 
-  .link {
-    @apply underline underline-offset-4 hover:text-antiFeather hover:dark:text-feather;
-  }
-
-  /* Buttons */
-  .button {
-    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom300 text-moss900 fill-current hover:bg-mushroom400 dark:bg-moss800 dark:text-sprout dark:hover:bg-vine;
-  }
-
-  a:focus-visible,
-  button:focus-visible {
-    @apply outline outline-2 outline-offset-4;
-  }
-
-  .read-next {
-    @apply p-6 rounded-lg bg-mushroom300 w-fit flex flex-row gap-5 items-center no-underline text-xl hover:bg-mushroom400 dark:bg-moss800 hover:dark:bg-moss700;
-  }
-
-  /** Header **/
-  .header-nav-link {
-    @apply flex gap-2 items-center justify-center text-moss900 dark:text-sprout hover:text-moss700;
-  }
-
-  .header-theme-toggle {
-    @apply transition-colors duration-200 flex items-center gap-1 p-1 text-moss900 dark:text-clover hover:bg-mushroom300 dark:hover:bg-ivy rounded-md;
-  }
-
-  .header-theme-toggle svg {
-    @apply h-8 w-8;
-  }
-
-  html:not(.dark) .header-theme-toggle svg:last-of-type {
-    display: none;
-  }
-
-  html.dark .header-theme-toggle svg:first-of-type {
-    display: none;
-  }
-
-  /** Bento grid **/
-  .bento-card {
-    @apply p-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
-  }
-
-  .bento-project {
-    @apply transition-opacity duration-200 aspect-square flex flex-col justify-between text-center py-12 px-8 rounded-2xl bg-mushroom100 text-moss900 dark:bg-ivy dark:text-sprout;
-  }
-
-  .bento-button-resume {
-    @apply button h-full rounded-xl flex;
-  }
-
-  .bento-button-resume svg {
-    @apply h-6 w-6 stroke-moss800 dark:stroke-mushroom200;
-  }
-
-  .bento-button {
-    @apply button h-full rounded-xl no-underline;
-    min-height: 96px;
-  }
-
-  .bento-button svg {
-    @apply w-6 h-6 fill-moss800 dark:fill-mushroom200;
-  }
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
 }

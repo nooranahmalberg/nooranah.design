@@ -16,7 +16,7 @@ const pageInfo = [
     circle: "#f59e0b", // amber-500
   },
   {
-    copy: "open to work starting mid-late April",
+    copy: "open to work starting mid-late April 2025",
     background: "#fef3c7", // amber-100
     color: "#44403c", // stone-700
     circle: "#14b8a6", // teal-500

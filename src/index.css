@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Roobert";
+  font-display: swap;
+  src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
+    url("./fonts/Roobert-Regular.woff") format("woff");
+  font-weight: regular;
+  font-style: normal;
+}
+
 @layer components {
   /* Typography */
   h1 {
@@ -18,16 +27,16 @@
   }
 
   .link {
-    @apply underline underline-offset-4 hover:text-antiFeather;
+    @apply underline underline-offset-4;
   }
 
   /* Buttons */
   .button {
-    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full bg-mushroom300 text-moss900 fill-current hover:bg-mushroom400;
+    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full fill-current;
   }
 
   .outline-button {
-    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full border border-gray-200 text-moss900 fill-current hover:text-moss700 hover:border-gray-300;
+    @apply transition-colors duration-200 self-start flex items-center justify-center gap-2 py-2 px-4 rounded-full border border-gray-200 fill-current hover:border-gray-300;
   }
 
   a:focus-visible,
@@ -36,7 +45,7 @@
   }
 
   .read-next {
-    @apply p-6 rounded-lg bg-mushroom300 w-fit flex flex-row gap-5 items-center no-underline text-xl hover:bg-mushroom400;
+    @apply p-6 rounded-lg w-fit flex flex-row gap-5 items-center no-underline text-xl;
   }
 
   .social-button {
@@ -46,11 +55,11 @@
 
   /* Header */
   .header {
-    @apply flex flex-col gap-4 md:flex-row md:justify-between md:items-center w-full py-2 md:py-6 transition-transform duration-300 ease-linear;
+    @apply font-Roobert flex flex-row gap-4 justify-between items-center w-full py-2 md:py-6 transition-transform duration-300 ease-linear;
   }
 
   .header-nav-link {
-    @apply flex gap-2 items-center justify-center text-moss900 hover:text-moss700;
+    @apply flex gap-2 items-center justify-center;
   }
 
   /** Cards **/
@@ -67,7 +76,7 @@
   }
 
   .workexperience-card {
-    @apply flex flex-col gap-4 p-6 rounded-md border border-2 border-gray-50 text-moss900;
+    @apply flex flex-col gap-4 p-6 rounded-md border border-2 border-gray-50;
   }
 
   .fade-in {

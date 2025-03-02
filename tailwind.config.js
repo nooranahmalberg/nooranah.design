@@ -19,31 +19,6 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        current: "currentColor",
-        mushroom100: "hsl(45, 21%, 100%)",
-        mushroom200: "hsl(20, 80%, 97%)" /* Diversion from scheme */,
-        mushroom300: "hsl(45, 21%, 85%)",
-        mushroom400: "hsl(45, 21%, 75%)",
-        blue700: "hsl(220, 30%, 40%)",
-        moss700: "hsl(157, 6%, 40%)",
-        moss800: "hsl(157, 6%, 33%)",
-        moss900: "hsl(30, 8%, 20%)",
-        feather: "hsl(161, 50%, 67%)",
-        mango: "hsl(42, 89%, 84%)",
-
-        // dark
-        sprout: "hsl(158, 6%, 80%)",
-        clover: "hsl(158, 6%, 60%)",
-        leaf: "hsl(158, 6%, 40%)",
-        ivy: "hsl(158, 6%, 23%)",
-        vine: "hsl(157, 6%, 37%)",
-        fern: "hsl(156, 5%, 18%)",
-        antiblue700: "hsl(353, 48%, 57%)",
-        antiheroBlue: "hsl(194, 32%, 90%)",
-        antiFeather: "hsl(161, 50%, 30%)",
-        antiMango: "hsl(42, 89%, 40%)",
-      },
       fontFamily: {
         sans: ["Lexend", "sans-serif"],
         Roobert: ["Roobert", "sans-serif"],

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +15,11 @@
 @layer components {
   /* Typography */
   h1 {
-    @apply text-2xl font-semibold md:text-4xl leading-tight;
+    @apply text-2xl font-bold md:text-4xl leading-tight;
   }
 
   h2 {
-    @apply text-xl font-bold md:text-3xl leading-loose;
+    @apply text-xl font-bold md:text-3xl leading-tight;
   }
 
   p {
@@ -63,30 +63,28 @@
   }
 
   /** Cards **/
-  .card {
-    @apply max-w-[1080px] mx-auto;
+  .pill {
+    @apply py-[2px] px-[6px] text-center border border-stone-300 rounded-md w-fit font-Roobert whitespace-nowrap;
   }
 
-  .card-image {
-    @apply flex flex-col px-16 pt-16 gap-10 rounded-xl h-[550px] overflow-hidden transition-colors duration-500 ease-linear;
+  .card-container {
+    @apply max-w-[1080px] mx-auto pb-8;
+  }
+
+  .project-card {
+    @apply flex flex-col -space-y-4 px-16 pt-16 gap-10 rounded-xl h-[700px] overflow-hidden transition-colors duration-500 ease-linear;
   }
 
   .project-thumbnail {
-    @apply h-[600px] bg-cover transition-transform duration-700 ease-in-out;
+    @apply w-full h-[500px] bg-cover bg-no-repeat transition-transform duration-700 ease-in-out;
   }
 
-  .card-image:hover .project-thumbnail {
-    @apply -translate-y-2;
+  .project-card:hover .project-thumbnail {
+    @apply -translate-y-[6px];
   }
 
   .workexperience-card {
     @apply flex flex-col gap-4 p-6 rounded-md border border-2 border-gray-50;
-  }
-
-  .fade-in {
-    opacity: 0;
-    transform: translateY(0.5rem);
-    animation: fadeIn 500ms ease-in-out forwards;
   }
 
   /* Case study */
@@ -99,6 +97,12 @@
   }
 
   /* Animations */
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(0.5rem);
+    animation: fadeIn 500ms ease-in-out forwards;
+  }
 
   @keyframes fadeIn {
     0% {

@@ -22,7 +22,7 @@ module.exports = {
       colors: {
         brandForest: "#156060",
         brandMango: "#FFF1AB",
-        mutedMango: "#FFFADF",
+        mutedMango: "hsl(50,60,93)",
       },
       fontFamily: {
         sans: ["Lexend", "sans-serif"],

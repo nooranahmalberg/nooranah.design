@@ -18,7 +18,7 @@
   </head>
   <body class="bg-white text-gray-900">
     <header
-      class="header max-w-[924px] mx-auto fixed top-0 left-0 right-0 z-50 bg-white py-4 px-6 rounded-b-md"
+      class="header max-w-[1080px] mx-auto bg-white py-4 px-6 rounded-b-md"
     >
       <div class="flex items-center gap-4">
         <img
@@ -50,82 +50,94 @@
         </ul>
       </nav>
     </header>
-    <!-- Add margin-top to create space below the fixed header -->
     <div
-      class="h-[800px] max-w-[1200px] m-auto flex items-center justify-center bg-stone-200"
+      class="w-[1080px] h-[720px] rounded-xl m-auto flex items-center justify-center p-16 gap-8 bg-mutedMango"
     >
-      <h1
-        class="font-medium text-[48px] leading-[52.8px] text-center max-w-[900px] px-4"
-      >
-        Ranah Malberg is a product designer in Brisbane, Australia
-      </h1>
-    </div>
-    <main class="max-w-[1200px] mx-auto space-y-24 pb-32">
-      <div class="w-[900px] mx-auto">
-        <h1
-          class="text-center font-light uppercase text-xl font-Roobert tracking-wide -mb-16"
-        >
-          Selected work
+      <div class="space-y-4">
+        <h1 class="font-bold text-5xl leading-[1.2em]">
+          Product designer in Brisbane, Australia
         </h1>
+        <p class="font-Roobert text-lg inline-block pb-4">
+          Hi, I'm Ranah (She/Her/Hers). I specialise in iterative, end-to-end
+          design. Blah blah 5 years experience. Blah blah. UX/UI Designer
+        </p>
+        <a href="/" class="text-lg font-Roobert underline">Contact Ranah</a>
       </div>
-
-      <a
-        href="./work/covetrus.html"
-        class="project-card bg-stone-100 hover:bg-orange-100"
-      >
-        <div class="space-y-3">
+      <img
+        src="./images/RanahMalbergProfile.png"
+        class="w-[800px] h-[350px] overflow-hidden rounded-md"
+      />
+    </div>
+    <main class="mx-auto space-y-8 pt-24 pb-32">
+      <div class="max-w-[1080px] mx-auto px-16">
+        <h1 class="text-2xl mb-2">5 case studies</h1>
+        <span>[ 3 UX/UI Design • 2 Design Systems ]</span>
+      </div>
+      <div class="card pb-8">
+        <a
+          href="./work/covetrus.html"
+          class="card-image bg-stone-100 hover:bg-orange-100"
+        >
           <h2>Reduced safety risk in clinical scheduling workflows</h2>
-          <p class="text-lg font-Roobert">
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Covetrus-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
+        <div class="px-16 pt-8 space-y-4 flex items-center">
+          <p class="text-xl font-Roobert">
             At Covetrus, I enhanced a safety-related feature on their
             cloud-based veterinary practice, restoring customer relations and
-            confidence in the product.
+            satisfaction with the cloud-based clinical management system.
           </p>
+          <a href="/" class="outline-button whitespace-nowrap"
+            >Read case study</a
+          >
         </div>
-        <div class="rounded-md">
-          <div
-            class="bg-[url('./images/Covetrus-Thumbnail.png')] project-thumbnail"
-          ></div>
-        </div>
-      </a>
-      <a
-        href="./work/enrola.html"
-        class="project-card bg-stone-100 hover:bg-emerald-50"
-      >
-        <div class="space-y-3">
+      </div>
+      <div class="card">
+        <a
+          href="./work/enrola.html"
+          class="card-image bg-stone-200 hover:bg-emerald-100"
+        >
           <h2>Simplified education comparison, optimised for conversion</h2>
-          <p class="text-lg font-Roobert">
-            At Enrola, I refined an MVP for usability and conversion with
-            early-stage startup founders, resulting in up to 15% increase in
-            student enrolments.
-          </p>
-        </div>
-        <div class="rounded-md">
-          <div
-            class="bg-[url('./images/Enrola-Thumbnail.png')] project-thumbnail"
-          ></div>
-        </div>
-      </a>
-      <a
-        href="./work/vocal.html"
-        class="project-card bg-stone-100 hover:bg-red-50"
-      >
-        <div class="space-y-3">
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Enrola-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
+        <p class="text-xl font-Roobert px-16 pt-8">
+          At Enrola, I refined an MVP for usability and conversion with
+          early-stage startup founders, resulting in up to 15% increase in
+          student enrolments.
+        </p>
+      </div>
+      <div class="card">
+        <a
+          href="./work/vocal.html"
+          class="card-image bg-stone-200 hover:bg-red-100"
+        >
           <h2>New monetisation features for creative writers</h2>
-          <p class="text-lg font-Roobert">
-            With an agency, Thinkmill, I contributed to a generative research
-            project to deliver new features that met real user needs, increasing
-            engagement on Vocal.
-          </p>
-        </div>
-        <div class="rounded-md">
-          <div
-            class="bg-[url('./images/Vocal-Thumbnail.png')] project-thumbnail"
-          ></div>
-        </div>
-      </a>
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Vocal-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
+        <p class="text-xl font-Roobert px-16 pt-8">
+          With an agency, Thinkmill, I contributed to a generative research
+          project to deliver new features that met real user needs, increasing
+          engagement on Vocal.
+        </p>
+      </div>
     </main>
     <footer class="text-center py-8 pt-10">
-      <p>© Designed by Nooranah Malberg, last updated on 29 February 2025</p>
+      <p>
+        © Designed and built by Nooranah Malberg, last updated on 29 February
+        2025
+      </p>
     </footer>
     <script type="module" src="./index.js"></script>
   </body>

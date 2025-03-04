@@ -19,6 +19,11 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        brandForest: "#156060",
+        brandMango: "#FFF1AB",
+        mutedMango: "#FFFADF",
+      },
       fontFamily: {
         sans: ["Lexend", "sans-serif"],
         Roobert: ["Roobert", "sans-serif"],

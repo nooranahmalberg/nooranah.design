@@ -64,15 +64,11 @@
 
   /** Cards **/
   .pill {
-    @apply py-[2px] px-[6px] text-center border border-stone-300 rounded-md w-fit font-Roobert whitespace-nowrap;
-  }
-
-  .card-container {
-    @apply max-w-[1080px] mx-auto pb-8;
+    @apply py-[2px] px-[6px] mb-6 text-center border border-stone-300 rounded-md w-fit font-Roobert whitespace-nowrap;
   }
 
   .project-card {
-    @apply flex flex-col -space-y-4 px-16 pt-16 gap-10 rounded-xl h-[700px] overflow-hidden transition-colors duration-500 ease-linear;
+    @apply flex flex-col px-16 pt-20 gap-5 rounded-xl h-[700px] overflow-hidden transition-colors duration-500 ease-linear;
   }
 
   .project-thumbnail {

@@ -6,7 +6,7 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        DEFAULT: "1400px",
+        DEFAULT: "1200px",
         // sm: '640px',
         // md: '768px',
         // lg: '1024px',
@@ -20,8 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        brandForest: "#156060",
-        brandMango: "#FFF1AB",
+        brandForest: "hsl(180,64,23)",
+        brandMango: "hsl(50,100,84)",
+        mutedForest: "hsl(180,60,84)",
         mutedMango: "hsl(50,60,93)",
       },
       fontFamily: {

@@ -17,7 +17,7 @@
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body class="bg-white text-gray-900">
-    <header class="header max-w-[1080px] mx-auto py-4">
+    <header class="container header py-4">
       <div class="flex items-center gap-4">
         <img
           class="h-16 w-16 object-cover rounded-full flex-shrink-0"
@@ -36,7 +36,9 @@
             >
           </li>
           <li>
-            <a href="/" class="header-nav-link text-base md:text-lg">Now</a>
+            <a href="./now.html" class="header-nav-link text-base md:text-lg"
+              >Now</a
+            >
           </li>
           <li>
             <a
@@ -48,27 +50,38 @@
         </ul>
       </nav>
     </header>
-    <div
-      class="w-[1080px] h-[900px] rounded-xl m-auto flex flex-row items-center gap-6 p-16 bg-mutedMango"
-    >
-      <div class="space-y-4">
-        <h1 class="text-4xl leading-[1.2em]">
-          Brisbane-based designer with a background in visual, UX/UI and
-          interaction design.
-        </h1>
-        <p class="text-lg font-Roobert">
-          Blah blah
-          <a href="/" class="underline">Contact Ranah</a>
-        </p>
+    <main class="container space-y-6">
+      <div
+        class="h-[980px] rounded-xl m-auto flex flex-row items-center gap-7 p-16 bg-mutedMango"
+      >
+        <div class="space-y-4">
+          <p class="text-lg font-Roobert">Hi, I'm Ranah (She/Her/Hers)</p>
+          <h1 class="text-4xl leading-[1.2em]">
+            Brisbane-based Product Designer
+          </h1>
+          <p class="text-lg font-Roobert">
+            I specialise in UX/UI design and design systems, and have a broad
+            background in visual design, conversion marketing and front-end
+            development. My design process is purpose-led.
+            <a href="/" class="underline">Contact</a>
+          </p>
+        </div>
+        <img
+          src="./images/RanahMalbergProfile.png"
+          class="w-[750px] h-[500px] rounded-md"
+        />
       </div>
-      <img
-        src="./images/RanahMalbergProfile.png"
-        class="w-[550px] h-[400px] rounded-md"
-      />
-    </div>
-    <main class="mx-auto pt-16">
-      <section class="space-y-8 pb-24">
-        <div class="max-w-[1080px] mx-auto flex flex-row gap-4 items-center">
+      <div
+        class="bg-sky-100 h-8 p-16 rounded-lg flex flex-row gap-6 items-center justify-center text-xl font-Roobert text-center"
+      >
+        <span>User Experience</span>
+        <span>Visual Design</span>
+        <span>Interaction Design</span>
+        <span>Web Dev Basics</span>
+        <span>Design Systems</span>
+      </div>
+      <section class="space-y-16 pb-24">
+        <div class="flex flex-row gap-4 items-center -mb-6 pt-20">
           <span class="font-Roobert text-lg whitespace-nowrap"
             >Selected Work</span
           >
@@ -77,91 +90,74 @@
             >[ 3 UX/UI Design • 2 Design Systems ]</span
           >
         </div>
-        <div class="card-container">
-          <a
-            href="./work/covetrus.html"
-            class="project-card bg-stone-100 hover:bg-stone-200"
-          >
-            <h2>Reduced safety risk in clinical scheduling workflows</h2>
-            <p class="text-xl font-Roobert">
-              At Covetrus, I enhanced a safety-related feature on their
-              cloud-based veterinary practice, restoring customer relations and
-              satisfaction with the cloud-based clinical management system.
-            </p>
-            <div class="flex gap-2">
-              <span class="pill">UX/UI design</span>
-              <span class="pill">2 mins</span>
-            </div>
-            <div class="rounded-md">
-              <div
-                class="bg-[url('./images/Covetrus-Thumbnail.png')] project-thumbnail"
-              ></div>
-            </div>
-          </a>
-        </div>
-        <div class="card-container">
-          <a
-            href="./work/enrola.html"
-            class="project-card bg-stone-100 hover:bg-stone-200"
-          >
-            <h2>
-              Education comparison simplified and optimised for conversion
-            </h2>
-            <p class="text-xl font-Roobert">
-              At Enrola, I refined an MVP for usability and conversion with
-              early-stage startup founders, resulting in up to 15% increase in
-              student enrolments.
-            </p>
-            <div class="flex gap-2">
-              <span class="pill">UX/UI design</span>
-              <span class="pill">Experimentation</span>
-              <span class="pill">2 mins</span>
-            </div>
-            <div class="rounded-md">
-              <div
-                class="bg-[url('./images/Enrola-Thumbnail.png')] project-thumbnail"
-              ></div>
-            </div>
-          </a>
-        </div>
-        <div class="card-container">
-          <a
-            href="./work/vocal.html"
-            class="project-card bg-stone-100 hover:bg-red-100"
-          >
-            <h2>New monetisation features for creative writers</h2>
-            <p class="text-xl font-Roobert">
-              With Thinkmill and Vocal, I contributed to a generative research
-              project to deliver validated features that increased engagement on
-              Vocal.
-            </p>
-            <div class="flex gap-2">
-              <span class="pill">UX/UI design</span>
-              <span class="pill">2 mins</span>
-            </div>
-            <div class="rounded-md">
-              <div
-                class="bg-[url('./images/Vocal-Thumbnail.png')] project-thumbnail"
-              ></div>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section class="bg-mutedMango h-600 w-full">
-        <div class="max-w-[1080px] mx-auto px-16 py-32 space-y-6">
-          <h1>Get in touch</h1>
-          <div class="flex flex-row gap-4">
-            <div class="bg-white p-12 w-3/4 rounded-lg">
-              <p>I'm open to work!</p>
-              <a href="/" class="button">Email</a>
-            </div>
-            <div class="bg-white p-12 rounded-lg">
-              <p>I'm open to work!</p>
-            </div>
+        <a href="./work/covetrus.html" class="project-card bg-stone-100">
+          <h2>Reduced safety risk in clinical scheduling workflows</h2>
+          <p class="text-xl font-Roobert">
+            At Covetrus, I enhanced a safety-related feature on their
+            cloud-based veterinary practice, restoring customer relations and
+            satisfaction with the cloud-based clinical management system.
+          </p>
+          <div class="flex gap-2">
+            <span class="pill">UX/UI design</span>
+            <span class="pill">2 mins</span>
           </div>
-        </div>
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Covetrus-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
+        <a href="./work/enrola.html" class="project-card bg-stone-100">
+          <h2>Streamlined student enrollment process for conversion</h2>
+          <p class="text-xl font-Roobert">
+            At Enrola, I refined an MVP for usability and conversion with
+            early-stage startup founders and key stakeholders, resulting in up
+            to 15% increase in student enrolments.
+          </p>
+          <div class="flex gap-2">
+            <span class="pill">UX/UI design</span>
+            <span class="pill">Experimentation</span>
+            <span class="pill">2 mins</span>
+          </div>
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Enrola-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
+        <a href="./work/vocal.html" class="project-card bg-stone-100">
+          <h2>New monetisation features for creative writers</h2>
+          <p class="text-xl font-Roobert">
+            With Thinkmill and Vocal, I contributed to a generative research
+            project and delivered new features that increased engagement on
+            Vocal.
+          </p>
+          <div class="flex gap-2">
+            <span class="pill">UX/UI design</span>
+            <span class="pill">2 mins</span>
+          </div>
+          <div class="rounded-md">
+            <div
+              class="bg-[url('./images/Vocal-Thumbnail.png')] project-thumbnail"
+            ></div>
+          </div>
+        </a>
       </section>
     </main>
+    <section class="bg-mutedMango h-600 w-full">
+      <div class="container mx-auto px-16 py-32 space-y-6">
+        <h1>Get in touch</h1>
+        <div class="flex flex-row gap-4">
+          <div class="bg-white p-12 w-3/4 rounded-lg">
+            <p>I'm open to work!</p>
+            <a href="/" class="button">Email</a>
+          </div>
+          <div class="bg-white p-12 rounded-lg">
+            <p>I'm open to work!</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="text-center py-8 bg-stone-900 text-white font-Roobert">
       <p>
         © Designed and built by Nooranah Malberg, last updated on 29 February

@@ -6,8 +6,8 @@
 @font-face {
   font-family: "Roobert";
   font-display: swap;
-  src: url("./fonts/Roobert-Regular.woff2") format("woff2"),
-    url("./fonts/Roobert-Regular.woff") format("woff");
+  src: url("./assets/fonts/Roobert-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Roobert-Regular.woff") format("woff");
   font-weight: regular;
   font-style: normal;
 }

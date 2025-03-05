@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article
+  class="prose prose-lg max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-sm"
+>
+  <h1>{{ page.title }}</h1>
+
+  <div class="text-sm text-gray-500 mb-4">
+    Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }}
+  </div>
+
+  <div class="note-content">{{ content }}</div>
+
+  {% if page.backlinks.size > 0 %}
+  <div class="mt-16 p-6 bg-gray-50 rounded-lg">
+    <h2 class="text-xl font-bold mb-4">Links to this note</h2>
+    <ul>
+      {% for backlink in page.backlinks %}
+      <li class="mb-2">
+        <a href="{{ backlink.url }}" class="text-blue-600 hover:text-blue-800"
+          >{{ backlink.title }}</a
+        >
+        <p class="text-sm text-gray-600">
+          {{ backlink.excerpt | strip_html | truncatewords: 20 }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article>

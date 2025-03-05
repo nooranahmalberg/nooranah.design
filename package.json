@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn parcel src/*.html",
-    "build": "yarn parcel build src/*.html"
+    "dev:parcel": "yarn parcel src/*.html",
+    "dev:jekyll": "bundle exec jekyll serve --livereload",
+    "dev": "concurrently \"yarn dev:parcel\" \"yarn dev:jekyll\"",
+    "build:parcel": "parcel build src/*.html --no-source-maps",
+    "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
+    "build": "yarn build:parcel && yarn build:jekyll"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "concurrently": "^9.1.2",
     "parcel": "^2.8.3",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1"

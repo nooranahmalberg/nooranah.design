@@ -3,3 +3,4 @@ dist
 .parcel-cache
 .vercel
 .DS_Store
+.next

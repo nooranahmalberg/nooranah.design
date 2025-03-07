@@ -26,9 +26,8 @@ function Header() {
       </div>
       <nav>
         <ul className="flex flex-row items-center gap-4 md:gap-6">
+          <HeaderNavLink href="/notes">Writing</HeaderNavLink>
           <HeaderNavLink href="/about">About</HeaderNavLink>
-          <HeaderNavLink href="/notes">Notes</HeaderNavLink>
-          <HeaderNavLink href="/now">Now</HeaderNavLink>
           <HeaderNavLink href="/contact">Contact</HeaderNavLink>
         </ul>
       </nav>
@@ -42,7 +41,10 @@ function HeaderNavLink({
 }: PropsWithChildren<{ href: string }>) {
   return (
     <li>
-      <Link href={href} className="header-nav-link text-base md:text-lg">
+      <Link
+        href={href}
+        className="header-nav-link text-base md:text-lg hover:underline hover:underline-offset-8 transition-all ease-in-out duration-300"
+      >
         {children}
       </Link>
     </li>

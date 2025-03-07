@@ -4,49 +4,91 @@ export default function About() {
   return (
     <PageLayout>
       <main className="container">
-        <div className="bg-mutedMango w-full h-[400px] rounded-lg"></div>
-        <div className="py-12 flex flex-row gap-16 items-top">
-          <div className="grid grid-cols-1">
-            <img
-              src="./images/RanahMalberg Profile Pic.png"
-              alt="Ranah Malberg"
-              className="w-full h-[450px] overflow-hidden rounded-md"
-            />
-            <img
-              src="./images/RanahMalberg Profile Pic.png"
-              alt="Ranah Malberg"
-              className="w-full h-[450px] overflow-hidden rounded-md"
-            />
-          </div>
+        <div class="w-[550px]">
+          <h1 class="py-8">
+            Nooranah Malberg is a digital product designer based in Brisbane,
+            Australia.
+          </h1>
+        </div>
+        <section className="pt-4 mb-32 flex flex-row gap-16 items-top">
+          <img
+            src="./images/RanahMalberg Profile Pic.png"
+            alt="Ranah Malberg"
+            className="w-[500px] h-[450px] object-cover object-center overflow-hidden"
+          />
           <div className="prose pt-16">
-            <h1>About Ranah</h1>
+            <h1>Apa khabar 👋</h1>
+            <p className="text-lg">
+              I'm driven by purpose and looking to make a positive difference on
+              users and customers.
+            </p>
             <p className="text-lg">
               I'm an experienced UX/UI designer based in Brisbane, Australia
               with 5 years of experience crafting digital solutions across a
               range of industries from animal healthcare to education.
             </p>
             <p className="text-lg">
-              I'm driven by purpose and looking to make a positive difference on
-              users and customers.
+              I'm an experienced UX/UI designer based in Brisbane, Australia
+              with 5 years of experience crafting digital solutions across a
+              range of industries from animal healthcare to education.
             </p>
-            <h2 className="text-2xl font-bold mb-4">Professional experience</h2>
-            <a href="/" className="header-nav-link w-fit text-lg">
+            <p className="text-lg">
+              I'm an experienced UX/UI designer based in Brisbane, Australia
+              with 5 years of experience crafting digital solutions across a
+              range of industries from animal healthcare to education.
+            </p>
+          </div>
+        </section>
+        <section class="w-[90%] mx-auto p-10 md:p-16 bg-mutedForest rounded-lg space-y-8 mb-32">
+          <h1 className="text-2xl font-bold mb-4">Professional experience</h1>
+          <table class="table-auto text-lg md:text-xl gap-4">
+            <thead class="hidden">
+              <tr class="w-full">
+                <th>Year</th>
+                <th>Role and Company</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="w-full">
+                <td>2024-2025</td>
+                <td class="py-3 px-3 md:px-9">Product Design, Enrola</td>
+              </tr>
+              <tr class="w-full">
+                <td>2023</td>
+                <td class="py-3 px-3 md:px-9">UX/UI Designer, Covetrus</td>
+              </tr>
+              <tr class="w-full">
+                <td>2020-2022</td>
+                <td class="py-3 px-3 md:px-9">Product Designer, Thinkmill</td>
+              </tr>
+              <tr class="w-full">
+                <td>2016-2018</td>
+                <td class="py-3 px-3 md:px-9">Junior UI Designer, GO1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <a href="/" className="underline text-xl">
               View CV on Google Drive
             </a>
-            <div className="text-lg">
-              <li>2024: Product Designer, Enrola</li>
-              <li>2023: UX/UI Designer, Covetrus</li>
-              <li>2020-2022: Product Designer, Thinkmill</li>
-              <li>2016 - 2018: Junior Designer, Go1</li>
-            </div>
-            <h2 className="text-2xl font-bold">Outside of work, I...</h2>
-            <div className="text-lg">
-              <li>Catch up over board games.</li>
-              <li>Recharge and read magazines at the library.</li>
-              <li>Travel and experience local food and culture.</li>
-            </div>
-          </div>
-        </div>
+          </p>
+        </section>
+        <section class="w-[90%] mx-auto rounded-lg space-y-8 mb-32">
+          <h1 className="text-2xl font-bold text-center">
+            Outside of work, I...
+          </h1>
+          <ul className="text-lg grid grid-cols-1 md:grid-cols-3 gap-4">
+            <li class="bg-mutedMango rounded-lg p-8">
+              Catch up over board games.
+            </li>
+            <li class="bg-mutedMango rounded-lg p-8">
+              Recharge at the library.
+            </li>
+            <li class="bg-mutedMango rounded-lg p-8">
+              Travel to experience local food and culture.
+            </li>
+          </ul>
+        </section>
       </main>
     </PageLayout>
   );

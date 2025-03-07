@@ -1,6 +1,31 @@
 ---
-title: Transitions and Growth
+title: The seeds of change are acceptance and hope
+stage: weedy
 ---
+Acceptance comes first.
+
+[https://en.wikipedia.org/wiki/Tohu_wa-bohu](https://en.wikipedia.org/wiki/Tohu_wa-bohu)  
+Lifequake represents that chaos. Life transition is about the way forward.
+
+Resilience is about bounce-back rate.
+
+Turn to creativity to help recreate themselves anew.
+
+The 7 tools for transition:
+
+- accept it
+    - Fear of the unknown is less than fear of the known. “I’d rather live with fear and failure than safety and regret”
+    - Write down fears. List anxieties and hopes to take control of them. What do I want to get out of life?
+    
+- mark It and ritualise the change
+- Shed and give up old mindsets
+- Create and share
+- Seek wisdom from others
+- Launch your new self
+- Tell your new story
+
+This is not a rigid sequence. Long goodbye. Messy middle. New beginning.
+
 **Life is in the Transitions summary:**
 Life disruptors, big and small, occur more often now than ever before. These include break ups, career changes or life-changing health diagnoses. 
 

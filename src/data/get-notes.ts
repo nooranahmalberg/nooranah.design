@@ -8,6 +8,7 @@ export type Note = {
   title: string;
   slug: string;
   content: string;
+  category?: string;
 };
 
 export function getAllNotes(): Note[] {
@@ -25,6 +26,7 @@ export function getAllNotes(): Note[] {
       title,
       slug: slugifyNote(fileName),
       content,
+      category: data.category || "Uncategorized",
     };
   });
 

@@ -26,10 +26,10 @@ export default function Home() {
           />
         </div>
         <div className="bg-sky-100 h-8 p-16 rounded-lg flex flex-row gap-6 items-center justify-center text-xl font-Roobert text-center">
-          <span>User Experience</span>
+          <span class="font-sans font-bold">Major Generalist Vibes</span>
           <span>Visual Design</span>
           <span>Interaction Design</span>
-          <span>Web Dev Basics</span>
+          <span>UX Design</span>
           <span>Design Systems</span>
         </div>
         <section className="space-y-16 pb-24">

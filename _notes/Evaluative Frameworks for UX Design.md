@@ -1,5 +1,6 @@
 ---
 title: Evaluative Frameworks for Product/UX Design
+stage: weedy
 ---
 - 7 Levels of Conversion
 - SEE

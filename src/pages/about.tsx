@@ -1,4 +1,7 @@
 import { PageLayout } from "@/components/page-layout";
+import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import ProfilePic from "../../public/images/RanahMalberg Profile Pic.png";
 
 export default function About() {
   return (
@@ -11,8 +14,10 @@ export default function About() {
           </h1>
         </div>
         <section className="pt-4 mb-32 flex flex-row gap-16 items-top">
-          <img
-            src="./images/RanahMalberg Profile Pic.png"
+          <Image
+            src={ProfilePic}
+            width={500}
+            height={500}
             alt="Ranah Malberg"
             className="w-[500px] h-[450px] object-cover object-center overflow-hidden"
           />
@@ -73,23 +78,36 @@ export default function About() {
             </a>
           </p>
         </section>
-        <section class="w-[90%] mx-auto rounded-lg space-y-8 mb-32">
-          <h1 className="text-2xl font-bold text-center">
-            Outside of work, I...
-          </h1>
-          <ul className="text-lg grid grid-cols-1 md:grid-cols-3 gap-4">
-            <li class="bg-mutedMango rounded-lg p-8">
-              Catch up over board games.
-            </li>
-            <li class="bg-mutedMango rounded-lg p-8">
-              Recharge at the library.
-            </li>
-            <li class="bg-mutedMango rounded-lg p-8">
-              Travel to experience local food and culture.
-            </li>
-          </ul>
-        </section>
+        <SectionHobbies />
       </main>
     </PageLayout>
+  );
+}
+
+function SectionHobbies() {
+  const { ref, inView } = useInView({
+    threshold: 1,
+    triggerOnce: true,
+  });
+  return (
+    <section
+      ref={ref}
+      className={`w-[90%] mx-auto rounded-lg space-y-8 mb-32 transition-on-scroll ${
+        inView ? "in-view" : ""
+      } `}
+    >
+      <h1 className="text-2xl font-bold text-center">Outside of work, I...</h1>
+      <ul className="text-lg grid grid-cols-1 md:grid-cols-3 gap-4">
+        <li className="bg-mutedMango rounded-lg p-8">
+          Catch up over board games.
+        </li>
+        <li className="bg-mutedMango rounded-lg p-8">
+          Recharge at the library.
+        </li>
+        <li className="bg-mutedMango rounded-lg p-8">
+          Travel to experience local food and culture.
+        </li>
+      </ul>
+    </section>
   );
 }

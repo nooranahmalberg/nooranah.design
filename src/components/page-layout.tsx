@@ -26,9 +26,10 @@ function Header() {
       </div>
       <nav>
         <ul className="flex flex-row items-center gap-4 md:gap-6">
+          <HeaderNavLink href="/">Home</HeaderNavLink>
+          <HeaderNavLink href="/contact">Work</HeaderNavLink>
           <HeaderNavLink href="/notes">Writing</HeaderNavLink>
           <HeaderNavLink href="/about">About</HeaderNavLink>
-          <HeaderNavLink href="/contact">Contact</HeaderNavLink>
         </ul>
       </nav>
     </header>

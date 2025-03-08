@@ -5,3 +5,6 @@ dist
 .DS_Store
 .next
 _notes/_private
+_notes/__assets/__private
+_notes/__templates
+_notes/.obsidian
